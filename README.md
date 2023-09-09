@@ -1,2 +1,2 @@
-# sdv
-Stardew Valley mods
+# Adventurer Abigail
+Stardew Valley mod
