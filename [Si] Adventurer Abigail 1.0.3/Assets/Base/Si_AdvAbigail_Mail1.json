@@ -1,0 +1,36 @@
+{
+	"Changes": [
+
+	{
+		// Mail ID Si_AA_Mail_01
+		"LogName": "Si AA Letter 01",
+		"Action": "EditData",
+		"Target": "Data/mail",
+		"Entries": {
+			"Si_AA_Mail_01": "Dear @,^^I understand you often run errands very early in the morning. I've instructed Abigail to begin a habit of early morning runs to boost her training, but she has told me she has trouble waking up so early. Could you help rouse her whenever you're in town early? I appreciate it.^^Regards, Marlon[#]Help Abigail Train",
+		},
+	},
+
+	{
+		// Mail ID Si_AA_Mail_02
+		"LogName": "Si AA Letter 02",
+		"Action": "EditData",
+		"Target": "Data/mail",
+		"Entries": {
+			"Si_AA_Mail_02": "Hi @!^^I wanted to let you know I made it home just fine. And I didn't even need the flare! Told you I had it under control ;)^^-Abigail[#]No flares necessary",
+		},
+	},
+
+	{
+		// Mail ID Si_AA_Mail_03
+		"LogName": "Si AA Letter 03",
+		"Action": "EditData",
+		"Target": "Data/mail",
+		"Entries": {
+			"Si_AA_Mail_03": "Dear @,^^Abigail has made much progress in her training. I plan on taking her down into the mines for the first time soon. If you would like to join us, please come to the Guild at your earliest convenience.^^Regards, Marlon[#]Abigail's First Expedition",
+		},
+	},
+
+
+	]
+}

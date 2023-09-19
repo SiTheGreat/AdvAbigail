@@ -1,0 +1,11 @@
+{
+	"Name": "[Si] Adventurer Abigail",
+	"Author": "SiTheGreat",
+	"Description": "Abigail joins the Adventurer's Guild.",
+	"Version": "1.0.3",
+	"UniqueID": "SiTheGreat.AdventurerAbigail",
+	"UpdateKeys": [ "Nexus:18000" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+	},
+}

@@ -1,0 +1,48 @@
+{
+
+	// AA: conversation topics only
+	// check canon-compliant dialogue and vanilla lines for any that need replacing
+
+	"Changes": [
+
+
+	{
+		"LogName": "AA Abigail Schedule",
+		"Action": "EditData",
+		"Target": "Characters/schedules/Abigail",
+		"Entries": {
+
+			// replace rainy day 1
+			// avoid wednesday, friday, fall monday
+			// use sunday, tuesday; both adv guild and mines/dwarf
+			// once a month studies w wiz (18th)
+			// marriage: avoid monday, friday, saturday
+
+			"Sun": "710 AdventureGuild 7 12 3/1140 Mine 42 7 1/1550 AdventureGuild 10 13 0/1710 AdventureGuild 7 12 3/1840 AdventureGuild 10 16 2/1920 AdventureGuild 7 12 3/2020 SeedShop 1 9 3 abigail_sleep",
+
+			"Tue": "GOTO Sun",
+
+			"18": "710 WizardHouse 1 20 1/1040 WizardHouse 9 5 0/1210 WizardHouse 2 6 3/1250 WizardHouse 1 20 1/1520 WizardHouse 10 14 0/1610 WizardHouse 1 20 1/1650 WizardHouse 9 5 0/1720 WizardHouse 5 5 0/1740 WizardHouse 3 5 0/1830 WizardHouse 1 20 1/2020 SeedShop 1 9 3 abigail_sleep",
+
+			"rain": "710 Mine 19 7 2/1020 Mine 42 7 1/1310 AdventureGuild 7 12 3/1540 AdventureGuild 10 13 0/1710 AdventureGuild 7 12 3/1920 SeedShop 1 9 3 abigail_sleep",
+
+			"marriage_Sun": "710 AdventureGuild 7 12 3/1140 Mine 42 7 1/1550 AdventureGuild 10 13 0/1710 AdventureGuild 7 12 3/1840 AdventureGuild 10 16 2/1920 AdventureGuild 7 12 3/2030 BusStop -1 23 3",
+
+			"marriage_Tue": "GOTO marriage_Sun",
+
+			"marriage_spring_18": "710 WizardHouse 1 20 1/1040 WizardHouse 9 5 0/1210 WizardHouse 2 6 3/1250 WizardHouse 1 20 1/1520 WizardHouse 10 14 0/1610 WizardHouse 1 20 1/1650 WizardHouse 9 5 0/1720 WizardHouse 5 5 0/1740 WizardHouse 3 5 0/1830 WizardHouse 1 20 1/2030 BusStop -1 23 3",
+
+			"marriage_summer_18": "GOTO marriage_spring_18",
+
+			"marriage_fall_18": "GOTO marriage_spring_18",
+
+			"marriage_winter_18": "GOTO marriage_spring_18",
+
+		},
+	},
+
+
+	]
+
+
+}
