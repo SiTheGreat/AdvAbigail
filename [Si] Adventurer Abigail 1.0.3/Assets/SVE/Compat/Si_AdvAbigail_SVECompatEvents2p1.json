@@ -1,0 +1,48 @@
+{
+	"Changes": [
+
+	// Events arc 2
+	// add A hearts to see in eventlookup
+
+	{
+	// Event ID 262213017
+	"LogName": "Si Adventurer Abigail ME 13",
+	"Action": "EditData",
+	"Target": "Data/Events/AdventureGuild", // A AdvAbiFirstMine
+	"Entries": {
+		"262213017/e 262213016/A AdvAbiFirstMine/p Abigail/f Abigail 2000": "continue/7 13/farmer -100 -100 2 Abigail 4 14 2 Marlon 2 14 2/addConversationTopic AdvAbiWeapons 5/skippable/fade/pause 400/emote Marlon 40/pause 200/emote Abigail 8/pause 200/emote Marlon 40/pause 200/playSound doorClose/warp farmer 6 19 0/move farmer 0 -3 0 true/pause 200/emote Abigail 8/pause 200/emote Marlon 40/pause 200/faceDirection farmer 3/pause 200/emote farmer 8/pause 200/emote Abigail 16/faceDirection Abigail 1/pause 200/speak Abigail \"@!#$b#Marlon is teaching me about weapons today.\"/pause 200/emote farmer 20/pause 200/speak Marlon \"Choosing the appropriate weapon for your fighting style, as well as caring for it properly, is essential to succeeding as an adventurer.\"/pause 200/faceDirection Abigail 2/speak Abigail \"I already know which one I want!#$b#He showed me a lava katana earlier!$1\"/pause 200/emote Marlon 28/pause 200/speak Marlon \"We'll... work up to that one.#$b#But you're making good progress with the basics.\"/pause 200/speak Abigail \"What weapon do you like to use @?\"/pause 200/quickQuestion What's your fighting style?#This sword I picked up off the ground works well enough.#I let my fists do the talking.#I've got a lava katana! It's loads of fun!#I like the precision I get with my dagger.#This club may look heavy but it gets the job done.#I can get some good hits in with my slingshot.#Oh I've just got this old purple thing I found in the desert.#May I present, THE INFINITY BLADE!(break)speak Abigail \"Wow, did you find that in the mines?\"(break)speak Abigail \"That sounds... painful.$6\"(break)speak Abigail \"Awesome! We should totally train together!$1\"(break)speak Abigail \"And sneak up on enemies like an assassin? That's pretty cool.$1\"(break)speak Abigail \"Wow, how do you lug that thing around all day?$1\"(break)speak Abigail \"That looks kind of hard to aim, but at least you can use rocks for ammo!$1\"(break)speak Abigail \"I love the color! This might be my new favorite.$1\"\\speak Marlon \"Hmm...#$b#Interesting.\"(break)speak Abigail \"WOW! That thing looks powerful!$7\"\\speak Marlon \"Incredible!#$b#That's a legendary weapon, @.#$b#I was not aware you were in possession of one!#$b#I would be honored to look it over sometime.\"/pause 200/emote farmer 20/pause 200/speak Abigail \"I can't wait to get something cooler than this basic sword.\"/pause 200/speak Marlon \"Speaking of that sword, have you been sharpening it regularly like I told you to?\"/pause 300/speak Abigail \"Uhh...$1\"/pause 200/emote Marlon 28/pause 300/end/fade",
+
+
+		}
+	},
+
+
+
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
