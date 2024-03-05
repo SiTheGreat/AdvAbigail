@@ -1,0 +1,20 @@
+{
+
+	// AA: Abigail dialogue patches
+
+	"Changes": [
+
+	{
+		"LogName": "AA Abigail Dialogue",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Abigail",
+		"Entries": {
+
+			"spring_12": "I wonder if my new adventuring skills could help me find the eggs faster...$9#$e#Not that I'd use such an unfair advantage, of course!$1",
+
+		}
+	}
+
+	]
+
+}

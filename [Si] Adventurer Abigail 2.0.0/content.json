@@ -1,0 +1,126 @@
+{
+
+	"Format": "2.0.0",
+
+	// Config //////////////////////////////////////////////////////////
+
+	"ConfigSchema":{
+
+		"SunSched": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, Abigail won't follow the Adventurer schedule on Sundays, which may slow or prevent progression of this mod's events."
+		},
+
+		"TueSched": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, Abigail won't follow the Adventurer schedule on Tuesdays, which may slow or prevent progression of this mod's events."
+		},
+
+		"ThuSched": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, Abigail won't follow the Adventurer schedule on the 18th of each season, which may prevent progression of this mod's events."
+		},
+
+		"RainSched": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, Abigail won't follow the Adventurer schedule on rainy days."
+		},
+
+		"GuildSched": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, Abigail won't occasionally help manage the Guild Shop."
+		},
+
+		"EditEvents": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, Abigail's vanilla 10-heart and 14-heart events won't be edited to match this mod."
+		},
+
+		"DialoguePatches": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, dialogue added by this mod won't be applied. Does not include conversation topics."
+		},
+
+		"CrossoverContent": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, crossover content will not occur. Does not include compatibility patches."
+		},
+
+	},
+	
+	"Changes": [
+
+		// Base Content //////////////////////////////////////////////////////////
+
+		{
+			"Action": "Include",
+			"FromFile": "Assets/Base/Si_SS_AdvAbigail.json",
+			"When": {
+				"HasWalletItem |contains=DwarvishTranslationGuide": true,
+			},
+		},
+
+		// Crossovers //////////////////////////////////////////////////////////
+
+		{
+			"Action": "Include",
+			"FromFile": "Assets/SVE/Si_SS_AdvAbigail_SVE.json",
+			"When": {
+				"HasWalletItem |contains=DwarvishTranslationGuide": true,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			},
+		},
+
+		// Adv Guild Events //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si Adventurer Abigail Guild Events",
+			"Action": "Load",
+			"Target": "Data/Events/AdventureGuild",
+			"FromFile": "Assets/Base/Si_AdvAbigail_GuildEvents.json",
+			"Priority": "Low"
+    	},
+
+		// Locations //////////////////////////////////////////////////////////
+
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_Si_AA_Map1",
+			"FromFile": "assets/Maps/Si_AA_MineMap1.tmx",
+		},		
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"Custom_Si_AA_Map1": {
+					"DisplayName": "Adv Abi Mine",						
+					"CreateOnLoad": { 
+						"MapPath": "Maps/Custom_Si_AA_Map1" 
+					},
+					"DefaultArrivalTile": {
+						"X": 15,
+						"Y": 6
+					}
+				}
+			}
+		},
+		{
+			"LogName": "Si Adventurer Abigail Custom Mine Events",
+			"Action": "Load",
+			"Target": "Data/Events/Custom_Si_AA_Map1",
+			"FromFile": "Assets/Base/Si_AdvAbigail_MineMapEvents.json",
+    	}
+
+		// End //////////////////////////////////////////////////////////
+
+	]
+
+}
