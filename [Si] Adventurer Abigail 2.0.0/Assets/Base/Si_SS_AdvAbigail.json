@@ -9,8 +9,14 @@
 			"Action": "Include",
 			"FromFile": "Assets/Base/Si_AdvAbigail_Events1.json",
 			"When": {
-				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
-			},
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+    	},
+
+		{
+			"LogName": "Si Adventurer Abigail Mail Arc 1",
+			"Action": "Include",
+			"FromFile": "Assets/Base/Si_AdvAbigail_Mail1.json",
     	},
 
 		{
@@ -19,7 +25,19 @@
 			"FromFile": "Assets/Base/Si_AdvAbigail_Events2.json",
 			"When": {
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
-			},
+				"ShortVersion": false
+			}
+    	},
+
+		// Guild Management //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si Adventurer Abigail Guild Schedule",
+			"Action": "Include",
+			"FromFile": "Assets/Base/Si_AdvAbigail_GuildSched.json",
+			"When": {
+				"GuildSched": true
+			}
     	},
 
 		// Modified Events //////////////////////////////////////////////////////////
@@ -33,14 +51,6 @@
 			}
     	},
 
-		// Mail //////////////////////////////////////////////////////////
-
-		{
-			"LogName": "Si Adventurer Abigail Mail Arc 1",
-			"Action": "Include",
-			"FromFile": "Assets/Base/Si_AdvAbigail_Mail1.json",
-    	},
-
 		// Schedule //////////////////////////////////////////////////////////
 
 		{
@@ -49,8 +59,8 @@
 			"FromFile": "Assets/Base/Si_AdvAbigail_Sched.json",
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=262213012": true,
-				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
-			},
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
 		},
 
 		// Dialogue //////////////////////////////////////////////////////////
@@ -68,7 +78,7 @@
 			"When": {
 				"DialoguePatches": true
 			}
-		},
+		}
 
 		// End //////////////////////////////////////////////////////////
 

@@ -2,6 +2,14 @@
 
 	"Format": "2.0.0",
 
+	// Changes so far:
+	// Added config
+	// Added dialogue
+	// Arc 2 events: 1/7
+	// GuildSched stuff
+	// More dialogue
+	// More CTs 
+
 	// Config //////////////////////////////////////////////////////////
 
 	"ConfigSchema":{
@@ -52,6 +60,12 @@
 			"AllowValues": "true, false",
 			"Default": "true",
 			"Description": "When disabled, crossover content will not occur. Does not include compatibility patches."
+		},
+
+		"ShortVersion": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "When enabled, events after the first arc won't play. This is a quicker version of this mod where Abigail will continue following her Adventurer schedules and dialogue (unless disabled by other config settings), but won't continue her story after Event 13. Just in case you're feeling overwhelmed with all the Abigail events!"
 		},
 
 	},

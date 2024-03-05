@@ -1,0 +1,37 @@
+{
+
+	// Guild Management schedule, shop changes, etc
+	// Summer 4-10
+
+	"Changes": [
+
+		// Change shop portrait and string
+
+		{
+			"LogName": "AA Abigail Guild Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Abigail",
+			"Entries": {
+				"summer_4": "",
+				"summer_5": "",
+				"summer_6": "",
+				"summer_7": "",
+				"summer_8": "",
+				"summer_9": "",
+				"summer_10": "",
+				"marriage_summer_4": "",
+				"marriage_summer_5": "",
+				"marriage_summer_6": "",
+				"marriage_summer_7": "",
+				"marriage_summer_8": "",
+				"marriage_summer_9": "",
+				"marriage_summer_10": "",
+			}
+		},
+
+		// AA Marlon Guild Schedule (vanilla map patches?)
+		// AA Marlon Guild Schedule Compats
+
+	]
+
+}
