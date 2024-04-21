@@ -2,35 +2,101 @@
 
 	// Guild Management schedule, shop changes, etc
 	// Summer 4-10
+	// Every other Sunday (7 & 21)
 
 	"Changes": [
 
-		// Change shop portrait and string
-
+		// Shop //////////////////////////////////////////////////////////
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"AdventureShop",
+				"Owners",
+				"#0"
+			],
+			"Entries": {
+				"Portrait": "Abigail",
+				"Dialogues": [
+					{
+						"Id": "Si.AAShopString",
+						"Dialogue": "Tell me what you need. I can handle it!"
+					}
+				]	
+			},
+			"When":
+        		{
+           			"Guildtime": "true",
+        		}
+		},
+		
+		// Abigail Guild Schedule //////////////////////////////////////////////////////////
 		{
 			"LogName": "AA Abigail Guild Schedule",
-			"Action": "Load",
+			"Action": "EditData",
 			"Target": "Characters/schedules/Abigail",
 			"Entries": {
-				"summer_4": "",
-				"summer_5": "",
-				"summer_6": "",
-				"summer_7": "",
-				"summer_8": "",
-				"summer_9": "",
-				"summer_10": "",
-				"marriage_summer_4": "",
-				"marriage_summer_5": "",
-				"marriage_summer_6": "",
-				"marriage_summer_7": "",
-				"marriage_summer_8": "",
-				"marriage_summer_9": "",
-				"marriage_summer_10": "",
+				"7": "0 AdventureGuild 5 11 2",
+				"marriage_spring_7": "0 AdventureGuild 5 11 2",
+				"21": "GOTO 7",
+				"summer_4": "GOTO 7",
+				"summer_5": "GOTO 7",
+				"summer_6": "GOTO 7",
+				"summer_7": "GOTO 7",
+				"summer_8": "GOTO 7",
+				"summer_9": "GOTO 7",
+				"summer_10": "GOTO 7",
+				"marriage_spring_21": "GOTO marriage_spring_7",
+				"marriage_summer_21": "GOTO marriage_spring_7",
+				"marriage_fall_7": "GOTO marriage_spring_7",
+				"marriage_fall_21": "GOTO marriage_spring_7",
+				"marriage_winter_7": "GOTO marriage_spring_7",
+				"marriage_winter_21": "GOTO marriage_spring_7",
+				"marriage_summer_4": "GOTO marriage_spring_7",
+				"marriage_summer_5": "GOTO marriage_spring_7",
+				"marriage_summer_6": "GOTO marriage_spring_7",
+				"marriage_summer_7": "GOTO marriage_spring_7",
+				"marriage_summer_8": "GOTO marriage_spring_7",
+				"marriage_summer_9": "GOTO marriage_spring_7",
+				"marriage_summer_10": "GOTO marriage_spring_7",
 			}
 		},
 
-		// AA Marlon Guild Schedule (vanilla map patches?)
-		// AA Marlon Guild Schedule Compats
+		// Marlon Guild Schedule //////////////////////////////////////////////////////////
+		// Set using antisocial npc mechanics apparently
+		// Hide him under some alwaysfront tiles on the custom mine map lol
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Entries": {
+				"Marlon": {
+					"DisplayName": "Marlon",
+					"SocialTab": "HiddenAlways",
+					"CanSocialize": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": false,
+					"Home": [
+						{
+							"Id": "Default",
+							"Location": "Custom_Si_AA_Map1",
+							"Tile": { "X": 20, "Y": 22 },
+							"Direction": "Down"
+						}
+					]
+				}
+			},
+			"When":
+        		{
+					"Guildtime": "true",
+        		}
+		},
+
+		// Marlon Compats //////////////////////////////////////////////////////////
+
+			// SVE (Add to SVE compat for this entire file
+			// Befriend Marlon and Gunther
+			// Make Marlon Real
 
 	]
 

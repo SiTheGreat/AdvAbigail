@@ -14,9 +14,9 @@
     	},
 
 		{
-			"LogName": "Si Adventurer Abigail Mail Arc 1",
+			"LogName": "Si Adventurer Abigail Mail",
 			"Action": "Include",
-			"FromFile": "Assets/Base/Si_AdvAbigail_Mail1.json",
+			"FromFile": "Assets/Base/Si_AdvAbigail_Mail.json",
     	},
 
 		{
@@ -26,17 +26,6 @@
 			"When": {
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
 				"ShortVersion": false
-			}
-    	},
-
-		// Guild Management //////////////////////////////////////////////////////////
-
-		{
-			"LogName": "Si Adventurer Abigail Guild Schedule",
-			"Action": "Include",
-			"FromFile": "Assets/Base/Si_AdvAbigail_GuildSched.json",
-			"When": {
-				"GuildSched": true
 			}
     	},
 
@@ -51,7 +40,7 @@
 			}
     	},
 
-		// Schedule //////////////////////////////////////////////////////////
+		// Schedules //////////////////////////////////////////////////////////
 
 		{
 			"LogName": "Si Adventurer Abigail Schedule",
@@ -62,6 +51,16 @@
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
 			}
 		},
+
+		{
+			"LogName": "Si Adventurer Abigail Guild Schedule",
+			"Action": "Include",
+			"FromFile": "Assets/Base/Si_AdvAbigail_GuildSched.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262213019": true, // update eventid as needed !!!
+				"GuildSched": true
+			}
+    	},
 
 		// Dialogue //////////////////////////////////////////////////////////
 

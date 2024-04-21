@@ -8,7 +8,8 @@
 	// Arc 2 events: 1/7
 	// GuildSched stuff
 	// More dialogue
-	// More CTs 
+	// More CTs
+	// Rearranged files
 
 	// Config //////////////////////////////////////////////////////////
 
@@ -29,7 +30,7 @@
 		"ThuSched": {
 			"AllowValues": "true, false",
 			"Default": "true",
-			"Description": "When disabled, Abigail won't follow the Adventurer schedule on the 18th of each season, which may prevent progression of this mod's events."
+			"Description": "When disabled, Abigail won't follow the Adventurer schedule on the 18th of each season, which may slow or prevent progression of this mod's events."
 		},
 
 		"RainSched": {
@@ -66,9 +67,21 @@
 			"AllowValues": "true, false",
 			"Default": "false",
 			"Description": "When enabled, events after the first arc won't play. This is a quicker version of this mod where Abigail will continue following her Adventurer schedules and dialogue (unless disabled by other config settings), but won't continue her story after Event 13. Just in case you're feeling overwhelmed with all the Abigail events!"
-		},
+		}
 
 	},
+
+	// Tokens //////////////////////////////////////////////////////////
+
+	"DynamicTokens": [
+		{
+			"Name": "GuildTime",
+			"Value": "true",
+			"When": {
+				"{{Query}}: ({{Season}} = Summer AND {{Day}}:{{Range:4, 10}}) OR {{Day |contains= 7, 21}}": true
+			}
+		}
+	],
 	
 	"Changes": [
 
@@ -79,7 +92,7 @@
 			"FromFile": "Assets/Base/Si_SS_AdvAbigail.json",
 			"When": {
 				"HasWalletItem |contains=DwarvishTranslationGuide": true,
-			},
+			}
 		},
 
 		// Crossovers //////////////////////////////////////////////////////////
@@ -90,17 +103,24 @@
 			"When": {
 				"HasWalletItem |contains=DwarvishTranslationGuide": true,
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
-			},
+			}
 		},
 
-		// Adv Guild Events //////////////////////////////////////////////////////////
+		// Load Events //////////////////////////////////////////////////////////
 
 		{
 			"LogName": "Si Adventurer Abigail Guild Events",
 			"Action": "Load",
 			"Target": "Data/Events/AdventureGuild",
-			"FromFile": "Assets/Base/Si_AdvAbigail_GuildEvents.json",
+			"FromFile": "Assets/Maps/Si_AdvAbigail_GuildEvents.json",
 			"Priority": "Low"
+    	},
+
+		{
+			"LogName": "Si Adventurer Abigail Custom Mine Events",
+			"Action": "Load",
+			"Target": "Data/Events/Custom_Si_AA_Map1",
+			"FromFile": "Assets/Maps/Si_AdvAbigail_MineMapEvents.json",
     	},
 
 		// Locations //////////////////////////////////////////////////////////
@@ -125,13 +145,7 @@
 					}
 				}
 			}
-		},
-		{
-			"LogName": "Si Adventurer Abigail Custom Mine Events",
-			"Action": "Load",
-			"Target": "Data/Events/Custom_Si_AA_Map1",
-			"FromFile": "Assets/Base/Si_AdvAbigail_MineMapEvents.json",
-    	}
+		}
 
 		// End //////////////////////////////////////////////////////////
 
