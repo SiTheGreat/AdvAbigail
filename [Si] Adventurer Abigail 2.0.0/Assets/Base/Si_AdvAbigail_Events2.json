@@ -22,7 +22,7 @@
 
 	// -sword 2 - enter mines while abi is there - m 'alright, mow try to aim for my left knee', a swings, move m back (how would I do this for a nonwalking char? Treat as object?), m 'that was too low, make sure you're using the full range of your arm', a swings, a 'panting', a swings, m 'alright, now try my other leg. Be sure to mind your footwork', a swings some more, a sweatdrop, a swings again, m ..., m 'let's end here for today', a ..., a '...i think I've got a few rounds left in me', m ..., m 'f what do you think?', q 'i think she can push s bit farther are important/she should decide'; if push, m music note, m 'very well, try aiming for my right arm (whichever is uncovered) this time', abi swing, end; if break, abi music note, abi 'alright, I'll get some rest and get back to training at full strength later', m smile, end; if choose, abi heart (add hearts), abi 'i'll do a couple more drills and then call it a day, sound good?', m smile, m 'very well, try (repeat first one)', end 
 
-	// -s&s1 - enter mountain while abi is there - see notes on spreadsheet
+	// -s&s1 - enter mountain while abi is there - Trio meets up, then abi checks the time nd runs off, other two commnt on how she alwys seems busy lately 'doing what? It's not exactly hopping around here', was almost late to a gig the other day; 'f do you know what's up?' f '…'
 
 	// -letter from abigail - hey f, we're doing a mine runs, want to come with? We're leaving the guild at X time if you decide to join us!
 
