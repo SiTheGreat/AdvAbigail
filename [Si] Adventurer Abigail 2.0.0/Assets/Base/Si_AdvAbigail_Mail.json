@@ -17,7 +17,7 @@
 		"Action": "EditData",
 		"Target": "Data/mail",
 		"Entries": {
-			"Si_AA_Mail_02": "Hi @!^^I wanted to let you know I made it home just fine. And I didn't even need the flare! Told you I had it under control ;)^^-Abigail[#]No flares necessary",
+			"Si_AA_Mail_02": "Hi @!^^I wanted to let you know I made it home just fine. And I didn't even need the flare! Told you I had it under control ;)^^-Abigail[#]No Flares Necessary",
 		},
 	},
 
@@ -28,6 +28,16 @@
 		"Target": "Data/mail",
 		"Entries": {
 			"Si_AA_Mail_03": "Dear @,^^Abigail has made much progress in her training. I plan on taking her down into the mines for the first time soon. If you would like to join us, please come to the Guild at your earliest convenience.^^Regards, Marlon[#]Abigail's First Expedition",
+		},
+	},
+
+	{
+		// Mail ID Si_AA_Mail_04
+		"LogName": "Si AA Letter 04",
+		"Action": "EditData",
+		"Target": "Data/mail",
+		"Entries": {
+			"Si_AA_Mail_04": "Hey @!^^We're doing a mine run, want to come with? We're leaving the guild at 2pm if you decide to join us!^^Regards, Marlon[#]Abigail's Mine Run",
 		},
 	},
 

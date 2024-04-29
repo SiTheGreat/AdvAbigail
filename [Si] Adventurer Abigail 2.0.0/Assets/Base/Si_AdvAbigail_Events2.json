@@ -47,9 +47,27 @@
 		}
 	},
 
- 
+	{
+	// Event ID 262213021
+	"LogName": "Si Adventurer Abigail LE 02",
+	"Action": "EditData",
+	"Target": "Data/Events/Farm", // Si_AA_Mail_04 
+	"Entries": {
+		"262213021/e 262213020/A AdvAbiMtn/x Si_AA_Mail_04": "null",
+		}
+	},
 
-	// -s&s1 - enter mountain while abi is there - Trio meets up, then abi checks the time nd runs off, other two commnt on how she alwys seems busy lately 'doing what? It's not exactly hopping around here', was almost late to a gig the other day; 'f do you know what's up?' f '…'
+	{
+	// Event ID 262213018
+	"LogName": "Si Adventurer Abigail ME 14",
+	"Action": "EditData",
+	"Target": "Data/Events/AdventureGuild", // A  AdvAbiWeapons
+	"Entries": {
+		"262213018/e 262213017/A AdvAbiWeapons/p Abigail/f Abigail 2000": "continue/7 13/farmer -100 -100 2 Abigail 5 11 2/skippable/fade/pause 200/
+		
+		pause 200/end/fade",
+		}
+	},
 
 	// -letter from abigail - hey f, we're doing a mine runs, want to come with? We're leaving the guild at X time if you decide to join us!
 
