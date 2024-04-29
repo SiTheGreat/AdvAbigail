@@ -27,8 +27,17 @@
 		}
 	},
 
+	{
+	// Event ID 262213019
+	"LogName": "Si Adventurer Abigail ME 14",
+	"Action": "EditData",
+	"Target": "Data/Events/Mine", // A  AdvAbiShop
+	"Entries": {
+		"262213019/e 262213018/A AdvAbiShop/p Abigail/f Abigail 2000": "continue/20 8/farmer 18 13 0 Abigail 21 8 0 Marlon 21 6 2/addConversationTopic AdvAbiSpar 7/skippable/fade/pause 300/move farmer 0 -6 1 true/speak Marlon \"Alright, now aim for my left knee.\"/pause 200/specificTemporarySprite swordswipe 21 7/playSound swordswipe/pause 200/speak Marlon \"That was too low.#$b#Make sure you're using the full range of your arm!\"/pause 200/specificTemporarySprite swordswipe 21 7/playSound swordswipe/pause 100/specificTemporarySprite swordswipe 21 7/playSound swordswipe/pause 200/speak Marlon \"Good, now try my other leg. Be sure to mind your footwork.\"/pause 200/positionOffset Abigail 0 8/pause 100/positionOffset Abigail 0 -16/specificTemporarySprite swordswipe 21 7/playSound swordswipe/pause 100/specificTemporarySprite swordswipe 21 7/playSound swordswipe/positionOffset Abigail 0 8/pause 200/animate Abigail false false 900 21 22 21 22 21 22/emote Abigail 28/animate Abigail false false 900 21 22 21 22 21 22 21 22 true/pause 200/emote Marlon 40/pause 100/speak Marlon \"Let's end here for today.\"/pause 200/speak Abigail \"...I think I've got a few rounds left in me.$3\"/pause 200/emote Marlon 40/pause 200/speak Marlon \"@, what do you think?\"/pause 200/quickQuestion Should Abigail continue?#I think she can push a bit longer.#It's important to take breaks.#It's her choice.(break)emote Marlon 56\\pause 200\\speak Marlon \"Very well, try aiming for my left arm this time.\"\\pause 200\\warp Abigail 21 7\\faceDirection Abigail 0\\specificTemporarySprite swordswipe 21 7\\playSound swordswipe\\warp Abigail 21 8\\faceDirection Abigail 0(break)emote Abigail 56\\pause 200\\speak Abigail \"Okay, okay, I'll get some rest and get back to training later. Sound good?\"\\pause 200\\emote Marlon 32(break)emote Abigail 20\\friendship Abigail 100\\pause 200\\speak Abigail \"I'll do a couple more drills and then call it a day, sound good?\"\\pause 200\\emote Marlon 32\\pause 200\\speak Marlon \"Very well, try aiming for my left arm this time.\"\\pause 200\\warp Abigail 21 7\\faceDirection Abigail 0\\specificTemporarySprite swordswipe 21 7\\playSound swordswipe\\warp Abigail 21 8\\faceDirection Abigail 0/pause 200/end/fade",
+		}
+	},
 
-	// -sword 2 - enter mines while abi is there - m 'alright, mow try to aim for my left knee', a swings, move m back (how would I do this for a nonwalking char? Treat as object?), m 'that was too low, make sure you're using the full range of your arm', a swings, a 'panting', a swings, m 'alright, now try my other leg. Be sure to mind your footwork', a swings some more, a sweatdrop, a swings again, m ..., m 'let's end here for today', a ..., a '...i think I've got a few rounds left in me', m ..., m 'f what do you think?', q 'i think she can push s bit farther are important/she should decide'; if push, m music note, m 'very well, try aiming for my right arm (whichever is uncovered) this time', abi swing, end; if break, abi music note, abi 'alright, I'll get some rest and get back to training at full strength later', m smile, end; if choose, abi heart (add hearts), abi 'i'll do a couple more drills and then call it a day, sound good?', m smile, m 'very well, try (repeat first one)', end 
+ 
 
 	// -s&s1 - enter mountain while abi is there - Trio meets up, then abi checks the time nd runs off, other two commnt on how she alwys seems busy lately 'doing what? It's not exactly hopping around here', was almost late to a gig the other day; 'f do you know what's up?' f '…'
 
