@@ -26,7 +26,7 @@
 		"262213018/e 262213017/A AdvAbiWeapons/p Abigail/d Mon Tue Wed Thu Fri Sat/f Abigail 2000": "continue/7 13/farmer -100 -100 2 Abigail 5 11 2/addConversationTopic AdvAbiShop 7/skippable/fade/pause 200/emote Abigail 40/pause 200/playSound doorClose/warp farmer 6 19 0/emote Abigail 16/move farmer 0 -5 0 true/pause 100/speak Abigail \"Hi @!\"/pause 400/faceDirection farmer 1/pause 200/faceDirection farmer 3/pause 200/faceDirection farmer 0/pause 200/emote farmer 8/pause 200/speak Abigail \"Marlon's out right now.#$b#He wants me to get some practice managing guild operations, so I'm going to start handling the front desk sometimes.#$b#Gil's still here if something comes up that I don't know how to deal with yet.#$b#If I can prove I've got things under control here, I might even convince him to take a vacation for a change!$1#$b#He really needs one.\"/pause 200/emote farmer 32/pause 200/speak Abigail \"So, what do you need?\"/pause 200/end/fade",
 		}
 	},
-	
+
 
 	// -sword 2 - enter mines while abi is there - m 'alright, mow try to aim for my left knee', a swings, move m back (how would I do this for a nonwalking char? Treat as object?), m 'that was too low, make sure you're using the full range of your arm', a swings, a 'panting', a swings, m 'alright, now try my other leg. Be sure to mind your footwork', a swings some more, a sweatdrop, a swings again, m ..., m 'let's end here for today', a ..., a '...i think I've got a few rounds left in me', m ..., m 'f what do you think?', q 'i think she can push s bit farther are important/she should decide'; if push, m music note, m 'very well, try aiming for my right arm (whichever is uncovered) this time', abi swing, end; if break, abi music note, abi 'alright, I'll get some rest and get back to training at full strength later', m smile, end; if choose, abi heart (add hearts), abi 'i'll do a couple more drills and then call it a day, sound good?', m smile, m 'very well, try (repeat first one)', end 
 
@@ -41,25 +41,6 @@
 	// -talk - enter abi home while she's there - f enters room, a 'hi f, what's up?', f 'i wanted to check on you after what happened in the mines/do you want to talk about what happened in the mines?', a 'close the door please', doorclose sound and action (can i close doors in events? If not take out), a walk to window, a ..., a 'I'm okay, i just... I guess is like before. I thought I'd be ready, i was all set to take down monsters, and I even followed through! But now i just feel so guilty. Lime I could have pushed it off and run away instead or something... do you ever feel like that?', f 'yes/no/sometimes'; if 1, a 'I'm glad I'm not alone in that'; if 2, a 'i guess it's just me...'; if 3, a 'i guess it's something I'll get used to. At least we're together in this, huh?'; f 'you don't have to deal with this on your own/you shouldn't bottle up what you're going through'; a 'you're saying I should talk to the others about it? What if they can't understand?', f 'they don't have to understand just to be there for you/give them some credit, I'm sure they'll do their best for you', a ..., a 'you're right, I've been trying to go through all this alone to prove to myself that i can do it, but that doesn't mean I can't ask my friends to support me. I'd xo the same for them!', f :), a 'just... let's save telling my parents for another time, alright? I'm not sure how to handle that conversation yet', f music note, a <3 (add/readd hearts back), cam pans down to caroline outside door as fade out
 	
 	// -s&s2 - meet in -place- - a 'thanks for coming guys, i wanted to talk to you about why I've been so busy lately', seb 'we were starting to get a bit worried about that', sam 'a bit? You used to be down for everything, and now you're out more than I've ever been with joja! Did you get a new job or something?', seb 'you did say you didn't want to work at your dad's shop forever...', a 'well... sorta', s&s ?, a 'f knows what's going on and convinced me that i should talk with my friends about it. So...', sam 'heck yeah, we're your friends!', seb 'you can tell us anything. We are here for you.', a :), a 'so a little while ago, I found out we have an adventurers guild nearby, and i decided to join up!', s&s !, sam 'wait you're an adventurer? Like f? That's so awesome!', a blush, a 'well I'm still in training. That's what's been taking up all my time', seb 'that sounds like a lot of hard work. Do you go to the mines a lot? Who trains you?', a 'so you know that old guy with the cape who shows up at town festivals?', seb 'i think my mom knows him', sam 'the guy with the obvious crush on marnie?', a 'yeah! He's the head of our guild branch, and he's been teaching me loads of stuff', seb 'huh, so that's how he gets all those monsters to display for spirits eve. Do you help him fight them?', a '...' sad, a 'actually, let me tell you about what happened the other day...', s&s ?, a ..., a sweatdrop, s&s !, s ?, s ..., a ..., etc, f heads out if the room quietly, msg 'abigail seems to have this covered. I'll give them space to talk.'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-
 
 
 
