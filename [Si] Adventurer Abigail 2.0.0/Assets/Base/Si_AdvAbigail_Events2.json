@@ -37,6 +37,16 @@
 		}
 	},
 
+	{
+	// Event ID 262213020
+	"LogName": "Si Adventurer Abigail ME 14",
+	"Action": "EditData",
+	"Target": "Data/Events/Mountain", // A  AdvAbiSpar
+	"Entries": {
+		"262213020/e 262213019/A AdvAbiSpar/f Abigail 2000": "continue/16 29/farmer 14 29 1 Abigail 17 29 3 Sam 15 28 2 Sebastian 16 28 2/addConversationTopic AdvAbiMtn 3/skippable/fade/pause 200/speak Sam \"And that's when Abigail used the Earthbind scroll on the Roc!$1\"/pause 200/speak Abigail \"I wasn't expecting it to fail that save!$1\"/pause 200/speak Sebastian \"Neither was I...$2\"/pause 200/speak Sam \"You should join our next game night @.#$b#Stuff like this happens all the time!$1\"/pause 200/emote farmer 32/pause 200/speak Abigail \"Speaking of time, I've gotta run.#$b#See you guys later!$1\"/pause 100/faceDirection Abigail 1/speed Abigail 5/move Abigail 10 0 1/warp Abigail -100 -100/pause 100/faceDirection Sam 1/faceDirection Sebastian 1/pause 200/emote Sebastian 40/emote Sam 8/pause 200/faceDirection Sam 2/faceDirection Sebastian 2/pause 200/speak Sebastian \"Abigail's been very busy lately.\"/pause 200/speak Sam \"Doing what? It's not exactly hopping around here.$2\"/pause 200/speak Sebastian \"Whatever it is, she's missed a several game nights, and she usually looks forward to those adventures.$2\"/pause 200/speak Sam \"Band practice too!$7#$b#Do you think something's wrong?$8\"/pause 200/emote Sebastian 40/pause 200/speak Sebastian \"@, do you know what's going on?\"/pause 200/faceDirection farmer 2/pause 200/emote farmer 40/pause 200/emote Sebastian 40/emote Sam 8/pause 200/faceDirection Sam 1/faceDirection Sebastian 3/pause 200/speak Sam \"She knows she can talk to us, right?$2#$b#We're her friends, after all.\"/pause 200/emote Sebastian 40/pause 200/speak Sebastian \"Whatever it is...#$b#I'm sure she will when she's ready.$2\"/pause 200/emote Sam 32/pause 200/emote farmer 28/pause 200/end/fade",
+		}
+	},
+
  
 
 	// -s&s1 - enter mountain while abi is there - Trio meets up, then abi checks the time nd runs off, other two commnt on how she alwys seems busy lately 'doing what? It's not exactly hopping around here', was almost late to a gig the other day; 'f do you know what's up?' f '…'
