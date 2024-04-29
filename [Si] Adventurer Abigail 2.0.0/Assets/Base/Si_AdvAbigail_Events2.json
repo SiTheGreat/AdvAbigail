@@ -29,7 +29,7 @@
 
 	{
 	// Event ID 262213019
-	"LogName": "Si Adventurer Abigail ME 14",
+	"LogName": "Si Adventurer Abigail ME 15",
 	"Action": "EditData",
 	"Target": "Data/Events/Mine", // A  AdvAbiShop
 	"Entries": {
@@ -39,7 +39,7 @@
 
 	{
 	// Event ID 262213020
-	"LogName": "Si Adventurer Abigail ME 14",
+	"LogName": "Si Adventurer Abigail ME 16",
 	"Action": "EditData",
 	"Target": "Data/Events/Mountain", // A  AdvAbiSpar
 	"Entries": {
@@ -49,7 +49,7 @@
 
 	{
 	// Event ID 262213021
-	"LogName": "Si Adventurer Abigail LE 02",
+	"LogName": "Si Adventurer Abigail LE 04",
 	"Action": "EditData",
 	"Target": "Data/Events/Farm", // Si_AA_Mail_04 
 	"Entries": {
@@ -59,7 +59,7 @@
 
 	{
 	// Event ID 262213022
-	"LogName": "Si Adventurer Abigail ME 14",
+	"LogName": "Si Adventurer Abigail ME 17",
 	"Action": "EditData",
 	"Target": "Data/Events/AdventureGuild",
 	"Entries": {
@@ -67,30 +67,23 @@
 		}
 	},
 
+	{
+		// Event ID 262213023
+		"LogName": "Si Adventurer Abigail ME 18",
+		"Action": "EditData",
+		"Target": "Data/Events/Mine",
+		"Entries": {
+			"262213023/e 262213022/f Abigail 2000": "Cavern/-1000 -1000/farmer -100 -100 2 Abigail -100 -100 2 Marlon 13 6 2/addConversationTopic AdvAbiSlay 3/skippable/changeToTemporaryMap Custom_Si_AA_Map1 15 5/viewport 33 32/warp Marlon 33 26/warp farmer 34 28/faceDirection farmer 3/warp Abigail 32 28/faceDirection Abigail 1/fade/pause 300/speak Marlon \"Remember, we're here to collect copper and coal.#$b#Try not to get distracted looking for trinkets.\"/pause 200/emote farmer 56/emote Abigail 56/pause 100/facedirection Abigail 0/pause 100/faceDirection farmer 2/pause 100/faceDirection Abigail 3/faceDirection farmer 1/pause 100/move farmer 3 0 1 true/faceDirection Abigail 2/pause 100/emote Marlon 56/move Abigail 0 4 2 true/pause 200/faceDirection farmer 0/pause 100/emote farmer 40/pause 200/faceDirection Abigail 3/pause 100/emote Abigail 40/playSound batScreech/jump Abigail/jump farmer/addTemporaryActor Stone_Golem 16 32 37 29 0 true Monster/faceDirection farmer 2/emote farmer 16/pause 100/specificTemporarySprite swordswipe 37 29/playSound swordswipe/pause 100/emote Marlon 16/faceDirection Abigail 1/pause 100/emote Abigail 16/specificTemporarySprite swordswipe 37 29/playSound swordswipe/addTemporaryActor Stone_Golem 16 32 33 27 0 true Monster/pause 100/specificTemporarySprite swordswipe 33 27/playSound swordswipe/pause 100/faceDirection Abigail 0/emote Abigail 16/specificTemporarySprite swordswipe 37 29/playSound swordswipe/addTemporaryActor Stone_Golem 16 32 36 28 1 true Monster/faceDirection Abigail 1/pause 100/addTemporaryActor Stone_Golem 16 32 34 26 3 true Monster/faceDirection Abigail 0/pause 100/playSound swordswipe/faceDirection Abigail 1/pause 100/playSound swordswipe/pause 200/playSound swordswipe/pause 100/playSound swordswipe/pause 100/emote Abigail 28/pause 100/speak Abigail \"Okay Abi, steady now, focus.$9#$b#You've got this.$2#$b#Just go and help @...$3\"/pause 200/positionOffset Abigail 0 -16/move Abigail 1 0 1/pause 200/speak Abigail \"Here we go...$3\"/pause 100/addTemporaryActor Duggy 16 32 33 33 0 true Monster/pause 200/playSound batScreech/jump Abigail/faceDirection Abigail 2/emote Abigail 16/emote Marlon 16/emote farmer 16/pause 100/specificTemporarySprite swordswipe 33 33/playSound swordswipe/viewport -1000 -1000/stopMusic/fade/pause 500/warp Marlon 32 32/warp farmer 34 32/faceDirection farmer 2/fade/pause 200/speak Marlon \"Are you alright Abigail?\"/pause 300/speak Abigail \"Y-yeah...$2\"/pause 300/quickQuestion #Great job taking it down!#Wow, did you mean to do that?(break)speak Abigail \"I, uh...$2#$b#Thanks, I guess.$2\"(break)speak Abigail \"I...$2#$b#Um...$2\"/pause 300/emote Marlon 40/pause 300/speak Marlon \"Slaying a creature is never something to take lightly.#$b#You acted in self defense, young adventurer.#$b#And you did so quickly, painlessly, and out of necessity.#$b#You did well.\"/pause 300/emote Abigail 40/pause 200/speak Abigail \"Right...$2\"/pause 300/emote Marlon 40/pause 300/speak Marlon \"Let us return to the surface for now.#$b#I'm sure Clint will understand if his order is slightly delayed.\"/pause 200/addItem 382 4/addItem 378 5/addItem 535 3/pause 200/end/fade",
+	
+			}
+		},
+	
 
-	//  f 'should I tell them? Yes/No'; if yes, a !, a 'i thought you were my friend f. You helped me get started and now you want to to sabotage everything i worked for?, a frustrated, a 'we'll talk after the mission', rmv some hearts; if No, a <3, a 'thanks f, I knew I could count on you!', m 'have everything? Alright let's go'
-
-	// -venture - enter the mines, get switched to cavern map, open in different area than last time - m and f walking around the mine area, lots of '...' , m 'remember, we're here to collect copper and coal. Try not to get distracted looking for trinkets,' a blush, a walks down, f follows, pan camera down a bit, a walks some more, monster sound, a and f jump, mon shows up near f, a turns, f starts fighting while a watches, a 'okay abi, steady now, you can do this, just go help f', a inches forward, mon appears right behind her, screech, a jumps and turns, f !, f steps forward, another mon in the way, a slashes twice, mon hurting sounds, a slash and screen goes black w slash sound, quiet pause, fade in w mon remnants on ground and a looking at them and marlon now by group, m 'a are you alright?', a 'y-yeah...', f 'great job taking it down!/wow, did you mean to do that?'; if 1, a 'i uh thx i guess'; if 2, a 'i... um...'; m ..., m 'slaying a creature is never something to take lightly. You acted in self defense, young adventurer, and you did it quickly, painlessly, and out of necessity. You did well.', a ..., a 'right...', m ..., m 'let us return to the surface for now. I'm sure clint will understand if his order is slightly delayed.' Add stone, copper, coal, and some trinket (or geodes?) to player
+	//  a 'okay abi, steady now, you can do this, just go help f', a inches forward, mon appears right behind her, screech, a jumps and turns, f !, f steps forward, another mon in the way, a slashes twice, mon hurting sounds, a slash and screen goes black w slash sound, quiet pause, fade in w mon remnants on ground and a looking at them and marlon now by group, m 'a are you alright?', a 'y-yeah...', f 'great job taking it down!/wow, did you mean to do that?'; if 1, a 'i uh thx i guess'; if 2, a 'i... um...'; m ..., m 'slaying a creature is never something to take lightly. You acted in self defense, young adventurer, and you did it quickly, painlessly, and out of necessity. You did well.', a ..., a 'right...', m ..., m 'let us return to the surface for now. I'm sure clint will understand if his order is slightly delayed.' Add stone, copper, coal, and some trinket (or geodes?) to player
 
 	// -talk - enter abi home while she's there - f enters room, a 'hi f, what's up?', f 'i wanted to check on you after what happened in the mines/do you want to talk about what happened in the mines?', a 'close the door please', doorclose sound and action (can i close doors in events? If not take out), a walk to window, a ..., a 'I'm okay, i just... I guess is like before. I thought I'd be ready, i was all set to take down monsters, and I even followed through! But now i just feel so guilty. Lime I could have pushed it off and run away instead or something... do you ever feel like that?', f 'yes/no/sometimes'; if 1, a 'I'm glad I'm not alone in that'; if 2, a 'i guess it's just me...'; if 3, a 'i guess it's something I'll get used to. At least we're together in this, huh?'; f 'you don't have to deal with this on your own/you shouldn't bottle up what you're going through'; a 'you're saying I should talk to the others about it? What if they can't understand?', f 'they don't have to understand just to be there for you/give them some credit, I'm sure they'll do their best for you', a ..., a 'you're right, I've been trying to go through all this alone to prove to myself that i can do it, but that doesn't mean I can't ask my friends to support me. I'd xo the same for them!', f :), a 'just... let's save telling my parents for another time, alright? I'm not sure how to handle that conversation yet', f music note, a <3 (add/readd hearts back), cam pans down to caroline outside door as fade out
 	
 	// -s&s2 - meet in -place- - a 'thanks for coming guys, i wanted to talk to you about why I've been so busy lately', seb 'we were starting to get a bit worried about that', sam 'a bit? You used to be down for everything, and now you're out more than I've ever been with joja! Did you get a new job or something?', seb 'you did say you didn't want to work at your dad's shop forever...', a 'well... sorta', s&s ?, a 'f knows what's going on and convinced me that i should talk with my friends about it. So...', sam 'heck yeah, we're your friends!', seb 'you can tell us anything. We are here for you.', a :), a 'so a little while ago, I found out we have an adventurers guild nearby, and i decided to join up!', s&s !, sam 'wait you're an adventurer? Like f? That's so awesome!', a blush, a 'well I'm still in training. That's what's been taking up all my time', seb 'that sounds like a lot of hard work. Do you go to the mines a lot? Who trains you?', a 'so you know that old guy with the cape who shows up at town festivals?', seb 'i think my mom knows him', sam 'the guy with the obvious crush on marnie?', a 'yeah! He's the head of our guild branch, and he's been teaching me loads of stuff', seb 'huh, so that's how he gets all those monsters to display for spirits eve. Do you help him fight them?', a '...' sad, a 'actually, let me tell you about what happened the other day...', s&s ?, a ..., a sweatdrop, s&s !, s ?, s ..., a ..., etc, f heads out if the room quietly, msg 'abigail seems to have this covered. I'll give them space to talk.'
-
-
-
-
-
-
-
-	//{
-	// Event ID 262213 TEMPLATE
-	//"LogName": "Si Adventurer Abigail ME 00",
-	//"Action": "EditData",
-	//"Target": "Data/Events/AdventureGuild", // 
-	//"Entries": {
-		//"2001/f Abigail 2000": "continue/7 13/farmer -100 -100 2 Abigail 7 12 0 Marlon 8 11 2/skippable/fade/pause 400/end/fade",
-		//}
-	//},
 
 
 
