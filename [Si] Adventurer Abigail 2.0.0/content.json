@@ -45,6 +45,12 @@
 			"Description": "When disabled, Abigail won't occasionally help manage the Guild Shop."
 		},
 
+		"GuildWeek": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, Abigail won't cover the Guild Shop for a week each Summer."
+		},
+
 		"EditEvents": {
 			"AllowValues": "true, false",
 			"Default": "true",
