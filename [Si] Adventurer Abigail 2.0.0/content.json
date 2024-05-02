@@ -5,7 +5,7 @@
 	// Changes so far:
 	// Added config
 	// Added dialogue
-	// Arc 2 events: 1/7
+	// Arc 2 events: 8/8 + 1 mail; need testing
 	// GuildSched stuff
 	// More dialogue
 	// More CTs
@@ -48,7 +48,7 @@
 		"EditEvents": {
 			"AllowValues": "true, false",
 			"Default": "true",
-			"Description": "When disabled, Abigail's vanilla 10-heart and 14-heart events won't be edited to match this mod."
+			"Description": "When disabled, Abigail's vanilla 10-heart and 14-heart events won't be modified to match this mod."
 		},
 
 		"DialoguePatches": {
@@ -95,7 +95,7 @@
 			}
 		},
 
-		// Crossovers //////////////////////////////////////////////////////////
+		// Compatibility Patches //////////////////////////////////////////////////////////
 
 		{
 			"Action": "Include",
@@ -105,6 +105,8 @@
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 			}
 		},
+
+		// Crossovers //////////////////////////////////////////////////////////
 
 		// Load Events //////////////////////////////////////////////////////////
 
