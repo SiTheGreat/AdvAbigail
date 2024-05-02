@@ -5,11 +5,18 @@
 	// Changes so far:
 	// Added config
 	// Added dialogue
+	// Modified version of 14h event after arc 2 done; need testing
 	// Arc 2 events: 8/8 + 1 mail; need testing
-	// GuildSched stuff
+	// GuildSched and GuildWeek stuff done; need testing
+
+	// Still to do:
+	// Test events, config, guild stuff
 	// More dialogue
 	// More CTs
-	// Rearranged files
+	// Marlon guild sched compats: SVE, Make Marlon Real, Befriend Marlon and Gunther; are there others?
+	// ^ Also Abigail guild sched compats to walk to guild shop when able
+	// SVE events/scheds compat
+	// Rearrange files ?
 
 	// Config //////////////////////////////////////////////////////////
 
