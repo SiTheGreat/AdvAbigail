@@ -70,18 +70,6 @@
 		}
 
 	},
-
-	// Tokens //////////////////////////////////////////////////////////
-
-	"DynamicTokens": [
-		{
-			"Name": "GuildTime",
-			"Value": "true",
-			"When": {
-				"{{Query}}: ({{Season}} = Summer AND {{Day}}:{{Range:4, 10}}) OR {{Day |contains= 7, 21}}": true
-			}
-		}
-	],
 	
 	"Changes": [
 
