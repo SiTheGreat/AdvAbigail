@@ -57,7 +57,7 @@
 			"Action": "Include",
 			"FromFile": "Assets/Base/Si_AdvAbigail_GuildSched.json",
 			"When": {
-				"HasSeenEvent:hostPlayer |contains=262213019": true, // update eventid as needed !!!
+				"HasSeenEvent:hostPlayer |contains=262213018": true,
 				"GuildSched": true
 			}
     	},
