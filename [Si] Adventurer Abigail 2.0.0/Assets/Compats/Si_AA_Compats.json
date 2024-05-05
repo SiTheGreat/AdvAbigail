@@ -1,0 +1,50 @@
+{
+
+	//"Format": "1.28.0",
+	"Changes": [
+
+	// SVE //////////////////////////////////////////////////////////
+
+	// Schedule
+	{
+		"LogName": "Si Adventurer Abigail SVE Compat Schedule",
+		"Action": "Include",
+		"FromFile": "Assets/Compats/SVE/Si_AdvAbigail_SVECompatSched.json",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262213012": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+		},
+	},
+
+	// Events
+	{
+		"LogName": "Si Adventurer Abigail SVE Compat Events",
+		"Action": "Include",
+		"FromFile": "Assets/Compats/SVE/Si_AdvAbigail_SVECompatEvents1.json",
+		"When": {
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+		},
+	},
+
+	// Guild Schedule
+	{
+		"LogName": "Si Adventurer Abigail Guild Schedule",
+		"Action": "Include",
+		"FromFile": "Assets/Compats/SVE/Si_AdvAbigail_SVEGuildSched.json",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262213018": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=Wolf.Marlon": false,
+			"HasMod: |contains=Yoshimax.BefriendMarlon": false
+		}
+	},
+
+	// Make Marlon Real and Befriend Marlon And Gunther //////////////////////////////////////////////////////////
+	
+	// These two mods make really similar patches so I can use the same compat file for both of them
+
+
+
+	],
+
+}

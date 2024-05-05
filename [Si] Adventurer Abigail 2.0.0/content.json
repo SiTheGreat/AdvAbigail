@@ -13,7 +13,7 @@
 	// Test events, config, guild stuff
 	// More dialogue
 	// More CTs
-	// Marlon guild sched compats: SVE, Make Marlon Real, Befriend Marlon and Gunther; are there others?
+	// Marlon guild sched compats: SVE, Make Marlon Real, Befriend Marlon and Gunther; are there others? Use same file for latter 2, they both call him 'Marlon' and do similar map patches
 	// ^ Also Abigail guild sched compats to walk to guild shop when able
 	// SVE events/scheds compat
 	// Rearrange files ?
@@ -25,19 +25,19 @@
 		"SunSched": {
 			"AllowValues": "true, false",
 			"Default": "true",
-			"Description": "When disabled, Abigail won't follow the Adventurer schedule on Sundays, which may slow or prevent progression of this mod's events."
+			"Description": "When disabled, Abigail won't follow the Adventurer schedule on Sundays. This may slow or prevent progression of this mod's events."
 		},
 
 		"TueSched": {
 			"AllowValues": "true, false",
 			"Default": "true",
-			"Description": "When disabled, Abigail won't follow the Adventurer schedule on Tuesdays, which may slow or prevent progression of this mod's events."
+			"Description": "When disabled, Abigail won't follow the Adventurer schedule on Tuesdays. This may slow or prevent progression of this mod's events."
 		},
 
 		"ThuSched": {
 			"AllowValues": "true, false",
 			"Default": "true",
-			"Description": "When disabled, Abigail won't follow the Adventurer schedule on the 18th of each season, which may slow or prevent progression of this mod's events."
+			"Description": "When disabled, Abigail won't follow the Adventurer schedule on the 18th of each season. This may slow or prevent progression of this mod's events."
 		},
 
 		"RainSched": {
@@ -70,16 +70,16 @@
 			"Description": "When disabled, dialogue added by this mod won't be applied. Does not include conversation topics."
 		},
 
-		"CrossoverContent": {
-			"AllowValues": "true, false",
-			"Default": "true",
-			"Description": "When disabled, crossover content will not occur. Does not include compatibility patches."
-		},
+		// "CrossoverContent": {
+		// 	"AllowValues": "true, false",
+		// 	"Default": "true",
+		// 	"Description": "When disabled, crossover content will not occur. Does not include compatibility patches."
+		// },
 
 		"ShortVersion": {
 			"AllowValues": "true, false",
 			"Default": "false",
-			"Description": "When enabled, events after the first arc won't play. This is a quicker version of this mod where Abigail will continue following her Adventurer schedules and dialogue (unless disabled by other config settings), but won't continue her story after Event 13. Just in case you're feeling overwhelmed with all the Abigail events!"
+			"Description": "When enabled, events after the first arc won't play. This is a quicker version of this mod where Abigail will continue following her Adventurer schedules and dialogue (unless disabled by other config settings), but won't continue her story after Event 13 unless re-enabled. Just in case you're feeling overwhelmed with all the Abigail events, or want to take a break from her journey for a while."
 		}
 
 	},
@@ -100,10 +100,9 @@
 
 		{
 			"Action": "Include",
-			"FromFile": "Assets/SVE/Si_SS_AdvAbigail_SVE.json",
+			"FromFile": "Assets/Compats/Si_AA_Compats.json",
 			"When": {
 				"HasWalletItem |contains=DwarvishTranslationGuide": true,
-				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 			}
 		},
 
@@ -132,7 +131,8 @@
 			"Action": "Load",
 			"Target": "Maps/Custom_Si_AA_Map1",
 			"FromFile": "assets/Maps/Si_AA_MineMap1.tmx",
-		},		
+		},
+			
 		{
 			"Action": "EditData",
 			"Target": "Data/Locations",
