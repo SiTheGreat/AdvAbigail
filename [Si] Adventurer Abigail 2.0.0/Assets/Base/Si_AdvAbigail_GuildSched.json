@@ -47,7 +47,7 @@
 				"Dialogues": [
 					{
 						"Id": "Si.AAShopString",
-						"Dialogue": "Tell me what you need. I can handle it!"
+						"Dialogue": "I'm covering the desk this week while Marlon takes care of some things."
 					}
 				]	
 			},
@@ -136,7 +136,7 @@
 			"When":
         		{
 					"GuildSched": "true",
-					"Day |contains= 2": true
+					"Day": "1" // Needs to be a day earlier for some reason lol
         		}
 		},
 
@@ -166,7 +166,7 @@
         		{
 					"GuildWeek": "true",
 					"Season |contains= Summer": true,
-					"Day |contains= 4, 5, 6, 7, 8, 9, 10": true
+					"Day |contains= 3, 4, 5, 6, 7, 8, 9": true
         		}
 		},
 
