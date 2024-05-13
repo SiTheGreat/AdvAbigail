@@ -2,7 +2,7 @@
 
 	// Guild Management schedule, shop changes, etc
 	// Summer 4-10
-	// Every other Sunday (7 & 21)
+	// 2nd of each month (Tuesday)
 
 	"Changes": [
 
@@ -29,7 +29,7 @@
 			"When":
         		{
            			"GuildSched": "true",
-					"Day |contains= 7, 21": true
+					"Day |contains= 2": true
         		}
 		},
 
@@ -63,31 +63,25 @@
 
 		// Monthly
 		{
-			"LogName": "AA Abigail Guild Schedule",
+			"LogName": "Si AA Abigail Guild Schedule",
 			"Action": "EditData",
 			"Target": "Characters/schedules/Abigail",
 			"Entries": {
-				"7": "0 AdventureGuild 5 11 2",
-				"21": "GOTO 7",
-				"marriage_spring_7": "0 AdventureGuild 5 11 2",
-				"marriage_spring_21": "GOTO marriage_spring_7",
-				"marriage_summer_7": "GOTO marriage_spring_7",
-				"marriage_summer_21": "GOTO marriage_spring_7",
-				"marriage_fall_7": "GOTO marriage_spring_7",
-				"marriage_fall_21": "GOTO marriage_spring_7",
-				"marriage_winter_7": "GOTO marriage_spring_7",
-				"marriage_winter_21": "GOTO marriage_spring_7",
+				"2": "0 AdventureGuild 5 11 2",
+				"marriage_spring_2": "0 AdventureGuild 5 11 2",
+				"marriage_summer_2": "GOTO marriage_spring_2",
+				"marriage_fall_2": "GOTO marriage_spring_2",
+				"marriage_winter_2": "GOTO marriage_spring_2",
 			},
 			"When":
         		{
            			"GuildSched": "true",
-					"Day |contains= 7, 21": true
         		}
 		},
 
 		// Summer
 		{
-			"LogName": "AA Abigail Guild Schedule",
+			"LogName": "Si AA Abigail Guild Week",
 			"Action": "EditData",
 			"Target": "Characters/schedules/Abigail",
 			"Entries": {
@@ -109,8 +103,6 @@
 			"When":
         		{
            			"GuildWeek": "true",
-					"Season |contains= Summer": true,
-					"Day |contains= 4, 5, 6, 7, 8, 9, 10": true
         		}
 		},
 
@@ -144,7 +136,7 @@
 			"When":
         		{
 					"GuildSched": "true",
-					"Day |contains= 7, 21": true
+					"Day |contains= 2": true
         		}
 		},
 

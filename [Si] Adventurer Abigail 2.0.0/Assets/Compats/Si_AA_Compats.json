@@ -1,13 +1,12 @@
 {
 
-	//"Format": "1.28.0",
 	"Changes": [
 
 	// SVE //////////////////////////////////////////////////////////
 
 	// Schedule
 	{
-		"LogName": "Si Adventurer Abigail SVE Compat Schedule",
+		"LogName": "Si AA SVE Compat Schedule",
 		"Action": "Include",
 		"FromFile": "Assets/Compats/SVE/Si_AdvAbigail_SVECompatSched.json",
 		"When": {
@@ -18,7 +17,7 @@
 
 	// Events
 	{
-		"LogName": "Si Adventurer Abigail SVE Compat Events",
+		"LogName": "Si AA SVE Compat Events 1",
 		"Action": "Include",
 		"FromFile": "Assets/Compats/SVE/Si_AdvAbigail_SVECompatEvents1.json",
 		"When": {
@@ -28,7 +27,7 @@
 
 	// Guild Schedule
 	{
-		"LogName": "Si Adventurer Abigail Guild Schedule",
+		"LogName": "Si AA Guild Schedule",
 		"Action": "Include",
 		"FromFile": "Assets/Compats/SVE/Si_AdvAbigail_SVEGuildSched.json",
 		"When": {
