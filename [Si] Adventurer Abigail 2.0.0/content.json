@@ -9,13 +9,11 @@
 	// Modified version of 14h event after arc 2 done; need testing
 	// Arc 2 events: 8/8 + 1 mail; need testing
 	// GuildSched (2nd) and GuildWeek (Summer 4-10) stuff done; need testing
+	// Marlon guild sched compats; need testing
 
 	// Still to do:
 	// Test events, config, guild stuff
-	// More dialogue
 	// More CTs
-	// Finish Marlon guild sched compats
-	// ^ Also Abigail guild sched compats to walk to guild shop when able
 	// SVE arc2 compat
 
 	// Config //////////////////////////////////////////////////////////

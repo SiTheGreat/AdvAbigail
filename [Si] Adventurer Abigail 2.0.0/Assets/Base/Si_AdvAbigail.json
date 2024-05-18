@@ -77,7 +77,8 @@
 			"Action": "Include",
 			"FromFile": "Assets/Base/Si_AdvAbigail_Dial.json",
 			"When": {
-				"DialoguePatches": true
+				"DialoguePatches": true,
+				"HasSeenEvent:hostPlayer |contains=262213012": true,
 			}
 		}
 
