@@ -114,7 +114,10 @@
 			"Action": "EditData",
 			"Target": "Characters/schedules/MarlonFay",
 			"Entries": {
-				"2": "610 AdventureGuild 4 11 2/630 Custom_AdventurerSummit 20 16 2/2000 Custom_AdventurerSummit 20 16 2",
+				"spring_2": "610 AdventureGuild 4 11 2/820 Custom_AdventurerSummit 20 16 2/2000 Custom_AdventurerSummit 20 16 2",
+				"summer_2": "610 AdventureGuild 4 11 2/820 Railroad 14 20 0",
+				"fall_2": "610 AdventureGuild 4 11 2/820 Custom_AdventurerSummit 62 5 0 Marlon_Grave",
+				"winter_2": "610 AdventureGuild 4 11 2/820 Railroad 14 19 0",
 			},
 			"When":
         		{
