@@ -1,0 +1,153 @@
+{
+
+	// Guild Management schedule, shop changes, etc
+	// Summer 4-10
+	// 2nd of each month (Tuesday)
+
+	"Changes": [
+
+		// Shop //////////////////////////////////////////////////////////
+
+		// Monthly
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"AdventureShop",
+				"Owners",
+				"#0"
+			],
+			"Entries": {
+				"Portrait": "Abigail",
+				"Dialogues": [
+					{
+						"Id": "Si.AAShopString",
+						"Dialogue": "Tell me what you need. I can handle it!"
+					}
+				]	
+			},
+			"When":
+        		{
+           			"GuildSched": "true",
+					"Day |contains= 2": true
+        		}
+		},
+
+		// Summer
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"AdventureShop",
+				"Owners",
+				"#0"
+			],
+			"Entries": {
+				"Portrait": "Abigail",
+				"Dialogues": [
+					{
+						"Id": "Si.AAShopString",
+						"Dialogue": "I'm covering the desk this week while Marlon takes care of some things."
+					}
+				]	
+			},
+			"When":
+        		{
+           			"GuildWeek": "true",
+					"Season |contains= Summer": true,
+					"Day |contains= 4, 5, 6, 7, 8, 9, 10": true
+        		}
+		},
+		
+		// Abigail Guild Schedule //////////////////////////////////////////////////////////
+
+		// Monthly
+		{
+			"LogName": "Si AA Mod Abigail Guild Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Abigail",
+			"Entries": {
+				"2": "700 AdventureGuild 4 11 2/2220 SeedShop 1 9 3 abigail_sleep",
+				"marriage_spring_2": "700 AdventureGuild 4 11 2/2230 BusStop -1 23 3",
+				"marriage_summer_2": "GOTO marriage_spring_2",
+				"marriage_fall_2": "GOTO marriage_spring_2",
+				"marriage_winter_2": "GOTO marriage_spring_2",
+			},
+			"When":
+        		{
+           			"GuildSched": "true",
+        		}
+		},
+
+		// Summer
+		{
+			"LogName": "Si AA Mod Abigail Guild Week",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Abigail",
+			"Entries": {
+				"summer_4": "700 AdventureGuild 4 11 2/2220 SeedShop 1 9 3 abigail_sleep",
+				"marriage_summer_4": "700 AdventureGuild 4 11 2/2230 BusStop -1 23 3",
+				"summer_5": "GOTO summer_4",
+				"summer_6": "GOTO summer_4",
+				"summer_7": "GOTO summer_4",
+				"summer_8": "GOTO summer_4",
+				"summer_9": "GOTO summer_4",
+				"summer_10": "GOTO summer_4",
+				"marriage_summer_5": "GOTO marriage_summer_4",
+				"marriage_summer_6": "GOTO marriage_summer_4",
+				"marriage_summer_7": "GOTO marriage_summer_4",
+				"marriage_summer_8": "GOTO marriage_summer_4",
+				"marriage_summer_9": "GOTO marriage_summer_4",
+				"marriage_summer_10": "GOTO marriage_summer_4",
+			},
+			"When":
+        		{
+           			"GuildWeek": "true",
+        		}
+		},
+
+		// Marlon Guild Schedule //////////////////////////////////////////////////////////
+
+		// Monthly
+		{
+			"LogName": "Si AA Mod Marlon Guild Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Marlon",
+			"Entries": {
+				"spring_2": "610 AdventureGuild 4 11 2/820 Blacksmith 2 16 1/1820 Saloon 3 23 3/2000 AdventureGuild 6 5 2",
+				"summer_2": "610 AdventureGuild 4 11 2/820 WizardHouse 12 21 3/2000 AdventureGuild 6 5 2",
+				"fall_2": "GOTO spring_2",
+				"winter_2": "GOTO fall_2",
+			},
+			"When":
+        		{
+           			"GuildSched": "true",
+        		}
+		},
+
+		// Summer
+		{
+			"LogName": "Si AA Mod Marlon Guild Week",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Marlon",
+			"Entries": {
+				"summer_4": "610 AdventureGuild 4 11 2/820 Blacksmith 2 16 1/1820 Saloon 3 23 3/2000 AdventureGuild 6 5 2",
+				"summer_5": "GOTO summer_4",
+				"summer_6": "GOTO summer_4",
+				"summer_7": "610 AdventureGuild 4 11 2/820 WizardHouse 12 21 3/2000 AdventureGuild 6 5 2",
+				"summer_8": "GOTO summer_7",
+				"summer_9": "GOTO summer_7",
+				"summer_10": "GOTO summer_7",
+				"marriage_summer_5": "820 Blacksmith 2 16 1/1820 Saloon 3 23 3/2000 BusStop -1 23 3",
+				"marriage_summer_8": "820 WizardHouse 12 21 3/2000 BusStop -1 23 3",
+				"marriage_summer_10": "GOTO marriage_summer_8",
+			},
+			"When":
+        		{
+           			"GuildWeek": "true",
+        		}
+		},
+
+	]
+
+}

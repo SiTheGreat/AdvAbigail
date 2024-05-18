@@ -39,8 +39,19 @@
 	},
 
 	// Make Marlon Real and Befriend Marlon And Gunther //////////////////////////////////////////////////////////
-	
-	// These two mods make really similar patches so I can use the same compat file for both of them
+	// These two mods make really similar Marlon patches so I can use the same compat files for both of them
+
+	// Guild Schedule
+	{
+		"LogName": "Si AA Guild Schedule",
+		"Action": "Include",
+		"FromFile": "Assets/Compats/SVE/Si_AdvAbigail_MarlonModGuildSched.json",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262213018": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=Wolf.Marlon, Yoshimax.BefriendMarlon": true,
+		}
+	},
 
 
 
