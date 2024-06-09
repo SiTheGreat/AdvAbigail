@@ -25,6 +25,16 @@
 		},
 	},
 
+	{
+		"LogName": "Si AA SVE Compat Events 2",
+		"Action": "Include",
+		"FromFile": "Assets/Compats/SVE/Si_AdvAbigail_SVECompatEvents2.json",
+		"When": {
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"ShortVersion": false
+		},
+	},
+
 	// Guild Schedule
 	{
 		"LogName": "Si AA Guild Schedule",

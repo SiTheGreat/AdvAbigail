@@ -8,10 +8,11 @@
 
 		// Shop //////////////////////////////////////////////////////////
 
-		// Monthly
+		// Monthly main shop
 		{
 			"Action": "EditData",
 			"Target": "Data/Shops",
+			"Priority": "Late",
 			"TargetField": [
 				"AdventureShop",
 				"Owners",
@@ -19,6 +20,9 @@
 			],
 			"Entries": {
 				"Portrait": "Abigail",
+				"Condition": "DAY_OF_MONTH 2, TIME 1200 2200",
+				"Name": "Abigail",
+				"Id": "Abigail Shop",
 				"Dialogues": [
 					{
 						"Id": "Si.AAShopString",
@@ -26,17 +30,59 @@
 					}
 				]	
 			},
+			"MoveEntries": [
+                {
+                    "Id": "Abigail Shop",
+                    "ToPosition": "Top"
+                },
+			],
 			"When":
         		{
            			"GuildSched": "true",
-					"Day |contains= 2": true
+					// "Day |contains= 2": true
         		}
 		},
 
-		// Summer
+		// Monthly item recovery
 		{
 			"Action": "EditData",
 			"Target": "Data/Shops",
+			"Priority": "Late",
+			"TargetField": [
+				"AdventureGuildRecovery",
+				"Owners",
+				"#0"
+			],
+			"Entries": {
+				"Portrait": "Abigail",
+				"Condition": "DAY_OF_MONTH 2, TIME 1200 2200",
+				"Name": "Abigail",
+				"Id": "Abigail Shop",
+				"Dialogues": [
+					{
+						"Id": "Si.AAShopString",
+						"Dialogue": "I'm on it!"
+					}
+				]	
+			},
+			"MoveEntries": [
+                {
+                    "Id": "Abigail Shop",
+                    "ToPosition": "Top"
+                },
+			],
+			"When":
+        		{
+           			"GuildSched": "true",
+					// "Day |contains= 2": true
+        		}
+		},
+
+		// Summer main shop
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"Priority": "Late",
 			"TargetField": [
 				"AdventureShop",
 				"Owners",
@@ -44,6 +90,9 @@
 			],
 			"Entries": {
 				"Portrait": "Abigail",
+				"Condition": "SEASON Summer, DAY_OF_MONTH 4 5 6 7 8 9 10, TIME 1200 2200",
+				"Name": "Abigail",
+				"Id": "Abigail Shop",
 				"Dialogues": [
 					{
 						"Id": "Si.AAShopString",
@@ -51,11 +100,53 @@
 					}
 				]	
 			},
+			"MoveEntries": [
+                {
+                    "Id": "Abigail Shop",
+                    "ToPosition": "Top"
+                },
+			],
 			"When":
         		{
            			"GuildWeek": "true",
-					"Season |contains= Summer": true,
-					"Day |contains= 4, 5, 6, 7, 8, 9, 10": true
+					// "Season |contains= Summer": true,
+					// "Day |contains= 4, 5, 6, 7, 8, 9, 10": true
+        		}
+		},
+
+		// Summer item recovery
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"Priority": "Late",
+			"TargetField": [
+				"AdventureGuildRecovery",
+				"Owners",
+				"#0"
+			],
+			"Entries": {
+				"Portrait": "Abigail",
+				"Condition": "SEASON Summer, DAY_OF_MONTH 4 5 6 7 8 9 10, TIME 1200 2200",
+				"Name": "Abigail",
+				"Id": "Abigail Shop",
+				"Dialogues": [
+					{
+						"Id": "Si.AAShopString",
+						"Dialogue": "I'm on it!"
+					}
+				]	
+			},
+			"MoveEntries": [
+                {
+                    "Id": "Abigail Shop",
+                    "ToPosition": "Top"
+                },
+			],
+			"When":
+        		{
+           			"GuildWeek": "true",
+					// "Season |contains= Summer": true,
+					// "Day |contains= 4, 5, 6, 7, 8, 9, 10": true
         		}
 		},
 		
@@ -67,8 +158,8 @@
 			"Action": "EditData",
 			"Target": "Characters/schedules/Abigail",
 			"Entries": {
-				"2": "700 AdventureGuild 4 11 2/2220 SeedShop 1 9 3 abigail_sleep",
-				"marriage_spring_2": "700 AdventureGuild 4 11 2/2230 BusStop -1 23 3",
+				"2": "a1200 AdventureGuild 4 11 2/2200 SeedShop 1 9 3 abigail_sleep",
+				"marriage_spring_2": "a1200 AdventureGuild 4 11 2/2200 BusStop -1 23 3",
 				"marriage_summer_2": "GOTO marriage_spring_2",
 				"marriage_fall_2": "GOTO marriage_spring_2",
 				"marriage_winter_2": "GOTO marriage_spring_2",
@@ -85,8 +176,8 @@
 			"Action": "EditData",
 			"Target": "Characters/schedules/Abigail",
 			"Entries": {
-				"summer_4": "700 AdventureGuild 4 11 2/2220 SeedShop 1 9 3 abigail_sleep",
-				"marriage_summer_4": "700 AdventureGuild 4 11 2/2230 BusStop -1 23 3",
+				"summer_4": "a1200 AdventureGuild 4 11 2/2200 SeedShop 1 9 3 abigail_sleep",
+				"marriage_summer_4": "a1200 AdventureGuild 4 11 2/2200 BusStop -1 23 3",
 				"summer_5": "GOTO summer_4",
 				"summer_6": "GOTO summer_4",
 				"summer_7": "GOTO summer_4",
