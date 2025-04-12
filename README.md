@@ -1,2 +1,0 @@
-# Adventurer Abigail
-

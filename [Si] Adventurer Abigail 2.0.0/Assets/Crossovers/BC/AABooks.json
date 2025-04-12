@@ -9,7 +9,7 @@
 	{
 		"Action": "Load",
 		"Target": "Mods/Si.BC/AAMinesBook",
-		"FromFile": "Data/SiAdventurerAbigail/AAMinesBook.png"
+		"FromFile": "Assets/Crossovers/BC/AAMinesBook.png"
 	},
 
 	{
@@ -301,7 +301,7 @@
 
 			// AAMinesBook
 
-			"Si.BC_AAMinesBook": {
+			"Si.BC_AAMinesBookSNF": {
 				"Title": "{{i18n:Si.BC.AAMinesBookName}}",
 				"Contents": "{{i18n:Si.BC.AAMinesBookContent}}",
 				"ObjectId": "(O)Si.BC_AAMinesBookNote",
@@ -318,7 +318,7 @@
 
 			// AASwordBook
 
-			"Si.BC_AASwordBook": {
+			"Si.BC_AASwordBookSNF": {
 				"Title": "{{i18n:Si.BC.AASwordBookName}}",
 				"Contents": "{{i18n:Si.BC.AASwordBookContent}}",
 				"ObjectId": "(O)Si.BC_AASwordBookNote",
