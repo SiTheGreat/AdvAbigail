@@ -1,0 +1,189 @@
+{
+
+	// AA schedules
+	// replace rainy day 1
+	// avoid wednesday, friday, fall monday
+	// use sunday, tuesday; both adv guild and mines/dwarf
+	// once a month studies w wiz (18th)
+	// marriage: avoid monday, friday, saturday
+
+	"Changes": [
+
+		// Regular //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "AA Abigail Sunday Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Abigail",
+			"Entries": {
+				"Sun": "710 AdventureGuild 7 12 3/1140 Mine 42 7 1/1550 AdventureGuild 10 13 0/1710 AdventureGuild 7 12 3/1840 AdventureGuild 10 16 2/1920 AdventureGuild 7 12 3/2020 SeedShop 1 9 3 abigail_sleep",
+				"marriage_Sun": "710 AdventureGuild 7 12 3/1140 Mine 42 7 1/1550 AdventureGuild 10 13 0/1710 AdventureGuild 7 12 3/1840 AdventureGuild 10 16 2/1920 AdventureGuild 7 12 3/2030 BusStop -1 23 3",
+			},
+			"When": {
+				"SunSched": true
+			}
+		},
+
+		{
+			"LogName": "AA Abigail Tuesday Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Abigail",
+			"Entries": {
+				"Tue": "710 AdventureGuild 7 12 3/1140 Mine 42 7 1/1550 AdventureGuild 10 13 0/1710 AdventureGuild 7 12 3/1840 AdventureGuild 10 16 2/1920 AdventureGuild 7 12 3/2020 SeedShop 1 9 3 abigail_sleep",
+				"marriage_Tue": "710 AdventureGuild 7 12 3/1140 Mine 42 7 1/1550 AdventureGuild 10 13 0/1710 AdventureGuild 7 12 3/1840 AdventureGuild 10 16 2/1920 AdventureGuild 7 12 3/2030 BusStop -1 23 3",
+			},
+			"When": {
+				"TueSched": true
+			}
+		},
+
+		{
+			"LogName": "AA Abigail Rainy Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Abigail",
+			"Entries": {
+				"rain": "710 Mine 19 7 2/1020 Mine 42 7 1/1310 AdventureGuild 7 12 3/1540 AdventureGuild 10 13 0/1710 AdventureGuild 7 12 3/1920 SeedShop 1 9 3 abigail_sleep",
+			},
+			"When": {
+				"RainSched": true
+			}
+		},
+
+		{
+			"LogName": "AA Abigail Thursday Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Abigail",
+			"Entries": {
+				"18": "710 WizardHouse 1 20 1/1040 WizardHouse 9 5 0/1210 WizardHouse 2 6 3/1250 WizardHouse 1 20 1/1520 WizardHouse 10 14 0/1610 WizardHouse 1 20 1/1650 WizardHouse 9 5 0/1720 WizardHouse 5 5 0/1740 WizardHouse 3 5 0/1830 WizardHouse 1 20 1/2020 SeedShop 1 9 3 abigail_sleep",
+				"marriage_spring_18": "710 WizardHouse 1 20 1/1040 WizardHouse 9 5 0/1210 WizardHouse 2 6 3/1250 WizardHouse 1 20 1/1520 WizardHouse 10 14 0/1610 WizardHouse 1 20 1/1650 WizardHouse 9 5 0/1720 WizardHouse 5 5 0/1740 WizardHouse 3 5 0/1830 WizardHouse 1 20 1/2030 BusStop -1 23 3",
+				"marriage_summer_18": "GOTO marriage_spring_18",
+				"marriage_fall_18": "GOTO marriage_spring_18",
+				"marriage_winter_18": "GOTO marriage_spring_18",
+			},
+			"When": {
+				"ThuSched": true
+			}
+		},
+
+		// Abigail Guild //////////////////////////////////////////////////////////
+
+		// Monthly
+		{
+			"LogName": "Si AA Abigail Guild Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Abigail",
+			"Entries": {
+				"2": "0 AdventureGuild 5 11 2",
+				"marriage_spring_2": "0 AdventureGuild 5 11 2",
+				"marriage_summer_2": "GOTO marriage_spring_2",
+				"marriage_fall_2": "GOTO marriage_spring_2",
+				"marriage_winter_2": "GOTO marriage_spring_2",
+			},
+			"When":
+        		{
+           			"GuildSched": "true",
+					"HasSeenEvent:hostPlayer |contains=262213018": true,
+        		}
+		},
+
+		// Summer
+		// {
+		// 	"LogName": "Si AA Abigail Guild Week",
+		// 	"Action": "EditData",
+		// 	"Target": "Characters/schedules/Abigail",
+		// 	"Entries": {
+		// 		"summer_4": "0 AdventureGuild 5 11 2",
+		// 		"marriage_summer_4": "0 AdventureGuild 5 11 2",
+		// 		"summer_5": "GOTO summer_4",
+		// 		"summer_6": "GOTO summer_4",
+		// 		"summer_7": "GOTO summer_4",
+		// 		"summer_8": "GOTO summer_4",
+		// 		"summer_9": "GOTO summer_4",
+		// 		"summer_10": "GOTO summer_4",
+		// 		"marriage_summer_5": "GOTO marriage_summer_4",
+		// 		"marriage_summer_6": "GOTO marriage_summer_4",
+		// 		"marriage_summer_7": "GOTO marriage_summer_4",
+		// 		"marriage_summer_8": "GOTO marriage_summer_4",
+		// 		"marriage_summer_9": "GOTO marriage_summer_4",
+		// 		"marriage_summer_10": "GOTO marriage_summer_4",
+		// 	},
+		// 	"When":
+        // 		{
+        //    		"GuildWeek": "true",
+		//			"HasSeenEvent:hostPlayer |contains=262213018": true,
+        // 		}
+		// },
+
+		// Marlon Guild //////////////////////////////////////////////////////////
+
+		// Set using antisocial npc mechanics apparently
+		// Hide him under some alwaysfront tiles on the custom mine map lol
+
+		// Monthly
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Entries": {
+				"Marlon": {
+					"DisplayName": "Marlon",
+					"SocialTab": "HiddenAlways",
+					"CanSocialize": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": false,
+					"Home": [
+						{
+							"Id": "Default",
+							"Location": "Custom_Si_AA_Map1",
+							"Tile": { "X": 20, "Y": 22 },
+							"Direction": "Down"
+						}
+					]
+				}
+			},
+			"When":
+        		{
+					"GuildSched": "true",
+					"Day": "1", // Needs to be a day earlier for some reason lol
+					"HasSeenEvent:hostPlayer |contains=262213018": true,
+					"HasMod: |contains=Wolf.Marlon": false,
+					"HasMod: |contains=Yoshimax.BefriendMarlon": false
+        		}
+		},
+
+		// Summer
+		// {
+		// 	"Action": "EditData",
+		// 	"Target": "Data/Characters",
+		// 	"Entries": {
+		// 		"Marlon": {
+		// 			"DisplayName": "Marlon",
+		// 			"SocialTab": "HiddenAlways",
+		// 			"CanSocialize": "FALSE",
+        //             "IntroductionsQuest": false,
+        //             "PerfectionScore": false,
+        //             "EndSlideShow": false,
+		// 			"Home": [
+		// 				{
+		// 					"Id": "Default",
+		// 					"Location": "Custom_Si_AA_Map1",
+		// 					"Tile": { "X": 20, "Y": 22 },
+		// 					"Direction": "Down"
+		// 				}
+		// 			]
+		// 		}
+		// 	},
+		// 	"When":
+        // 		{
+		// 			"GuildWeek": "true",
+		// 			"Season |contains= Summer": true,
+		// 			"Day |contains= 3, 4, 5, 6, 7, 8, 9": true,
+		//			"HasSeenEvent:hostPlayer |contains=262213018": true,
+		//			"HasMod: |contains=Wolf.Marlon": false,
+		//			"HasMod: |contains=Yoshimax.BefriendMarlon": false
+        // 		}
+		// },
+
+	]
+
+}

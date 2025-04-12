@@ -1,0 +1,11 @@
+{
+  "SunSched": "true",
+  "TueSched": "true",
+  "ThuSched": "true",
+  "RainSched": "true",
+  "GuildSched": "true",
+  "EditEvents": "true",
+  "DialoguePatches": "true",
+  "CrossoverContent": "true",
+  "ShortVersion": "false"
+}

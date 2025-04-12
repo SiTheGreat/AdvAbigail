@@ -1,0 +1,26 @@
+{
+
+	// AA: Abigail dialogue patches
+
+	"Changes": [
+
+	{
+		"LogName": "AA Abigail Dialogue",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Abigail",
+		"Entries": {
+
+			"spring_12": "I wonder if my new adventuring skills could help me find the eggs faster...$9#$e#Not that I'd use such an unfair advantage, of course!$1",
+			"winter_Fri10": "Hey, those boots look good for adventuring.#$e#Where did you get them?",
+			"Sat6": "I think I need a break from training.#$e#It's fun, but there are some new video games I'd like to try that I haven't had time for.",
+			"fall_Tue": "Do you ever run out of backpack space when you're down in the mines?#$e#It's been happening to me a lot lately.",
+			"winter_Wed": "I bet farming's pretty boring in the winter.#$e#Want to join me for a mine run sometime?",
+			"fall_26": "Will you be at the Spirit's Eve festival?#$e#I'm helping Marlon build the monster cages for it.",
+			"summer_Thu": "The mines are a great way to escape the heat.#$e#They're nice and cool inside.",
+
+		}
+	}
+
+	]
+
+}

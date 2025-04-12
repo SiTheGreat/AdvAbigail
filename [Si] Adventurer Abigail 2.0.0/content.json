@@ -1,0 +1,151 @@
+{
+
+	"Format": "2.0.0",
+
+
+	// Config //////////////////////////////////////////////////////////
+
+	"ConfigSchema":{
+
+		"SunSched": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, Abigail won't follow the Adventurer schedule on Sundays. This may slow or prevent progression of this mod's events."
+		},
+
+		"TueSched": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, Abigail won't follow the Adventurer schedule on Tuesdays. This may slow or prevent progression of this mod's events."
+		},
+
+		"ThuSched": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, Abigail won't follow the Adventurer schedule on the 18th of each season. This may slow or prevent progression of this mod's events."
+		},
+
+		"RainSched": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, Abigail won't follow the Adventurer schedule on rainy days."
+		},
+
+		"GuildSched": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, Abigail won't help manage the Guild Shop once a month."
+		},
+
+		// "GuildWeek": {
+		// 	"AllowValues": "true, false",
+		// 	"Default": "true",
+		// 	"Description": "When disabled, Abigail won't cover the Guild Shop for a week each Summer."
+		// },
+
+		"EditEvents": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, Abigail's vanilla 10-heart and 14-heart events won't be modified to match this mod."
+		},
+
+		"DialoguePatches": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, dialogue added by this mod won't be applied. Does not include conversation topics."
+		},
+
+		"CrossoverContent": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, crossover content will not occur. Does not include compatibility patches."
+		},
+
+		"ShortVersion": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "When enabled, events after the first arc won't play unless disabled again. This is a quicker version of this mod where Abigail will continue following her Adventurer schedules and dialogue (unless disabled by other config settings), but won't continue her story after Event 13 unless re-enabled. Just in case you're feeling overwhelmed with all the Abigail events, or want to take a break from her journey for a while."
+		}
+
+	},
+	
+	"Changes": [
+
+		// Base Content //////////////////////////////////////////////////////////
+
+		{
+			"Action": "Include",
+			"FromFile": "Assets/Base/Si_AdvAbigail.json",
+			"When": {
+				"HasWalletItem |contains=DwarvishTranslationGuide": true,
+			}
+		},
+
+		// Compatibility Patches //////////////////////////////////////////////////////////
+
+		{
+			"Action": "Include",
+			"FromFile": "Assets/Compats/Si_AA_Compats.json",
+			"When": {
+				"HasWalletItem |contains=DwarvishTranslationGuide": true,
+			}
+		},
+
+		// Crossovers //////////////////////////////////////////////////////////
+
+		{
+			"Action": "Include",
+			"FromFile": "Assets/Crossovers/Si_AA_Crossovers.json",
+			"When": {
+				"HasWalletItem |contains=DwarvishTranslationGuide": true,
+				"CrossoverContent": true
+			}
+		},
+
+		// Load Events //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si Adventurer Abigail Guild Events",
+			"Action": "Load",
+			"Target": "Data/Events/AdventureGuild",
+			"FromFile": "Assets/Maps/Si_AdvAbigail_GuildEvents.json",
+			"Priority": "Low"
+    	},
+
+		{
+			"LogName": "Si Adventurer Abigail Custom Mine Events",
+			"Action": "Load",
+			"Target": "Data/Events/Custom_Si_AA_Map1",
+			"FromFile": "Assets/Maps/Si_AdvAbigail_MineMapEvents.json",
+    	},
+
+		// Locations //////////////////////////////////////////////////////////
+
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_Si_AA_Map1",
+			"FromFile": "assets/Maps/Si_AA_MineMap1.tmx",
+		},
+			
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"Custom_Si_AA_Map1": {
+					"DisplayName": "Adv Abi Mine",						
+					"CreateOnLoad": { 
+						"MapPath": "Maps/Custom_Si_AA_Map1" 
+					},
+					"DefaultArrivalTile": {
+						"X": 15,
+						"Y": 6
+					}
+				}
+			}
+		}
+
+		// End //////////////////////////////////////////////////////////
+
+	]
+
+}

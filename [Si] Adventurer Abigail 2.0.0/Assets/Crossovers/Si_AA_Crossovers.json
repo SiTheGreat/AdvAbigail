@@ -1,0 +1,40 @@
+{
+
+	"Changes": [
+
+	// SVE //////////////////////////////////////////////////////////
+	
+	// Conversation Topics
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Crossovers/SVE/Si_AA_SVE_Dial.json",
+		"When": {
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+		}
+	},
+
+	// Befriend Marlon And Gunther //////////////////////////////////////////////////////////
+	
+	// Conversation Topics
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Crossovers/BMaG/Si_AA_BMaG_Dial.json",
+		"When": {
+			"HasMod: |contains=Yoshimax.BefriendMarlon": true,
+		}
+	},
+
+	// Book Collecting //////////////////////////////////////////////////////////
+	
+	// Books
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Crossovers/BC/AAbooks.json",
+		"When": {
+			"HasMod: |contains=Si.BC": true,
+		}
+	},
+
+	],
+
+}

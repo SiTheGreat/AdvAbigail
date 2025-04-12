@@ -1,0 +1,24 @@
+{
+
+	"Changes": [
+
+		{
+			"LogName": "Si AA BMaG Marlon Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Marlon",
+			"Entries": {
+	
+				"AdvAbiDelay1": "I've been thinking about recruiting more adventurers for the guild.#$e#On one hand, it's a heavy burden to place on someone. On the other, I'd rather impart my skills to the next generation while I can.",
+				"AdvAbi_M_Start": "You'll be pleased to hear Abigail has taken to her training with great enthusiasm.",
+				"AdvAbiLost": "I wonder if Abigail will fare as well navigating the mines as she does the forest.",
+				"AdvAbiFirstMine": "Thank you for your assistance in the mines.#$e#I confess it has been a long time since I've trained new guild members.#$e#I'd forgotten how frightening one's first excursion can be.",
+				"AdvAbiShop": "Administrative skills are an important part of being a guild member.#$e#Perhaps you should also take a turn at the front desk one of these days...",
+				"AdvAbiSpar": "Abigail's training is coming along remarkably.",
+				"AdvAbiSlay": "Did you see how Abigail handled that monster in the mines?#$e#Her form still needs work, but her reflexes are excellent!#$e#I no longer have any doubts about her potential, that's for certain.",
+	
+			}
+		},
+
+	]
+
+}

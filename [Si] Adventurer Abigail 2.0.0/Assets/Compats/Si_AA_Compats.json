@@ -1,0 +1,69 @@
+{
+
+	"Changes": [
+
+	// SVE //////////////////////////////////////////////////////////
+
+	// Schedule
+	{
+		"LogName": "Si AA SVE Compat Schedule",
+		"Action": "Include",
+		"FromFile": "Assets/Compats/SVE/Si_AdvAbigail_SVECompatSched.json",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262213012": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+		},
+	},
+
+	// Events
+	{
+		"LogName": "Si AA SVE Compat Events 1",
+		"Action": "Include",
+		"FromFile": "Assets/Compats/SVE/Si_AdvAbigail_SVECompatEvents1.json",
+		"When": {
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+		},
+	},
+
+	{
+		"LogName": "Si AA SVE Compat Events 2",
+		"Action": "Include",
+		"FromFile": "Assets/Compats/SVE/Si_AdvAbigail_SVECompatEvents2.json",
+		"When": {
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"ShortVersion": false
+		},
+	},
+
+	// Guild
+	{
+		"LogName": "Si AA SVE Compat Guild",
+		"Action": "Include",
+		"FromFile": "Assets/Compats/SVE/Si_AdvAbigail_SVECompatGuild.json",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262213018": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+		},
+	},
+
+	// Make Marlon Real and Befriend Marlon And Gunther //////////////////////////////////////////////////////////
+	
+	// These two mods make really similar Marlon patches so I can use the same compat files for both of them
+
+	// Guild Schedule
+	{
+		"LogName": "Si AA Marlon Mods Guild",
+		"Action": "Include",
+		"FromFile": "Assets/Compats/MarlonMods/Si_AdvAbigail_MarlonSched.json",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262213018": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=Wolf.Marlon, Yoshimax.BefriendMarlon": true,
+		}
+	},
+
+
+
+	],
+
+}

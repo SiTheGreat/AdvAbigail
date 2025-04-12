@@ -1,0 +1,211 @@
+{
+	"Changes": [
+
+	// Events arc 1
+
+	{
+	// Event ID 262213000 HIDDEN
+	"LogName": "Si Adventurer Abigail HE 01",
+	"Action": "EditData",
+	"Target": "Data/Events/BusStop", //
+	"Entries": {
+		"262213000/e 3": "none/-1000 -1000/farmer -100 -100 2/addConversationTopic AdvAbiDelay1 7/end",
+		}
+	},
+
+	{
+	// Event ID 262213001
+	"LogName": "Si Adventurer Abigail ME 01",
+	"Action": "EditData",
+	"Target": "Data/Events/Mountain", //
+	"Entries": {
+		"262213001/e 262213000/A AdvAbiDelay1/f Abigail 2000": "continue/53 8/farmer 48 7 1 Abigail 54 7 0/addConversationTopic AdvAbiDelay2 3/skippable/fade/pause 400/move farmer 4 0 1 true/emote Abigail 40/emote farmer 8/jump Abigail/faceDirection Abigail 3/pause 200/speak Abigail \"@!\"/pause 200/emote farmer 32/pause 200/emote farmer 8/pause 200/emote Abigail 40/pause 300/faceDirection Abigail 0/pause 300/speak Abigail \"What's it like down there?$2\"/pause 300/question fork0 \"#There's a lot of monsters to fight.#There's a lot of treasure to find.\"/pause 200/speak Abigail \"Sounds like fun.\"/pause 400/speak Abigail \"But it's pretty dangerous, right?$2#$b#I've heard stories of people getting lost down there.$2#$b#Or trapped.$2#$b#Or... worse.$2\"/pause 200/emote farmer 40/pause 200/faceDirection Abigail 3/speak Abigail \"It sounds like the kind of thing someone would only do if they didn't have a choice.$2#$b#So why do you go down there?\"/pause 200/quickQuestion Why do you go into the mines?#I want to protect the valley.#I need materials for my farm.#I have to get stronger.#I like killing monsters.#I'm looking for treasure to sell.(break)speak Abigail \"That's a noble goal.#$b#I'm grateful you're keeping the valley safe.\"(break)speak Abigail \"I guess that makes sense.#$b#Farming must need a lot of resources.\"(break)speak Abigail \"Huh, between that and farming I would think you're already pretty strong.#$b#I guess the training never ends huh?\"(break)speak Abigail \"Wow, they must be pretty scared of you by now.#$b#Is there a lot of blood involved?#$b#Wait - don't answer that!$7\"(break)speak Abigail \"You must be pretty rich by now.#$b#So that's where you keep getting those amethysts from!$1\"/pause 300/emote Abigail 40/pause 200/speak Abigail \"I've always wanted to go on adventures.#$b#To fight monsters, and save people...$2#$b#To prove myself, you know?#$b#My parents told me to get my head out of the clouds.$2#$b#They said I'd get hurt, and we're already safe, so I shouldn't go looking for trouble.$2#$b#I mean, they're not wrong.\"/pause 200/faceDirection Abigail 0/emote Abigail 40/pause 200/speak Abigail \"But it's pretty cool that you get to do those things.#$b#I guess I'm just not cut out for that.\"/pause 200/question fork1 \"#Why not? You should go for it!#I think you can do it if you set your mind to it.#It's up to you.#It's not for everyone.#Yeah, I don't think you'd be very good at it.\"/pause 300/emote Abigail 40/pause 200/speak Abigail \"You know what? I'll think about it.#$b#Thanks for talking with me @.\"/pause 200/emote farmer 32/pause 400/end/fade",
+		}
+	},
+
+	{
+	// Event ID 262213002
+	"LogName": "Si Adventurer Abigail ME 02",
+	"Action": "EditData",
+	"Target": "Data/Events/Farm", //
+	"Entries": {
+		"262213002/e 262213001/A AdvAbiDelay2/f Abigail 2000": "continue/26 25/farmer 15 31 0 Abigail 26 24 0/skippable/fade/pause 400/speak Abigail \"I'm going to do it!$1\"/pause 200/emote farmer 8/pause 200/speak Abigail \"I've decided to become an adventurer.\"/pause 200/emote farmer 16/pause 200/speak Abigail \"You inspired me, in fact.#$b#You came all the way out here from the city to follow your dreams.#$b#You weren't even good at it back then.#$b#But you kept doing it, and you've made a name for yourself.#$b#Not just in farming and adventuring, but things like fishing and building stuff too.#$b#When you find something you're passionate about, you don't let anything stop you.#$b#If you can do that, so can I!\"/pause 200/emote farmer 60/pause 200/emote farmer 20/pause 200/speak Abigail \"Alright, time to get started!#$b#Can you help me train?\"/pause 300/emote farmer 40/pause 200/emote farmer 16/pause 200/emote farmer 40/pause 200/speak Abigail \"There's a guild of adventurers?#$b#Right here in the valley?#$b#That's perfect!#$b#Can you introduce me to them?\"/pause 300/emote farmer 32/pause 200/jump Abigail/pause 200/speak Abigail \"Thanks so much @!#$b#I'm ready whenever you are.#$b#I can't wait!#$b#I'm going to be an adventurer!$1\"/pause 200/emote farmer 32/pause 300/end/fade",
+		}
+	},
+
+	{
+	// Event ID 262213003
+	"LogName": "Si Adventurer Abigail ME 03",
+	"Action": "EditData",
+	"Target": "Data/Events/AdventureGuild", //
+	"Entries": {
+		"262213003/e 262213002/f Abigail 2000": "continue/7 13/farmer 4 16 0 Abigail 6 16 0 Marlon 5 13 2/addConversationTopic AdvAbiDelay3 8/addConversationTopic AdvAbi_M_Start 4/skippable/fade/pause 300/speak Marlon \"You want to join the Adventurer's Guild?\"/pause 200/speak Abigail \"Yes!#$b#It's always been my dream to be an adventurer.#$b#To explore new places and keep people safe.#$b#I even started practicing with this old sword I found!\"/pause 200/textAboveHead Marlon \"Hmm...\"/pause 200/speak Marlon \"What do you think, @?\"/pause 200/quickQuestion What do you think?#She'll need a lot of training.#I think she has potential.#I trust her to have my back.(break)speak Marlon \"Indeed.#$b#Handling a weapon takes a great deal of preparation.#$b#Both physical and mental.\"(break)speak Marlon \"A passionate spark will only carry you so far.#$b#You must be ready to put in the work.\"(break)speak Marlon \"Oh?#$b#It is important for your allies to have faith in your abilities.#$b#Even more important, however, is having the skills and experience to not let them down.\"/pause 200/speak Marlon \"The path of an adventurer is not an easy one.#$b#For every joy, there will be sorrow.#$b#For every triumph, there will be disaster.#$b#And for every gain, there will be loss.#$b#Do you understand?\"/pause 500/speak Abigail \"I understand.\"/pause 300/emote Abigail 40/pause 300/speak Abigail \"I am ready for this.\"/pause 200/emote Marlon 40/pause 200/speak Marlon \"We'll see about that.\"/pause 200/emote Abigail 32/pause 200/speak Marlon \"Let's start by getting you a proper sword...\"/pause 300/end/fade",
+		}
+	},
+
+	{
+	// Event ID 262213004
+	"LogName": "Si Adventurer Abigail ME 04",
+	"Action": "EditData",
+	"Target": "Data/Events/Mine", //
+	"Entries": {
+		"262213004/e 262213003/A AdvAbiDelay3/d Mon Tue Wed Thu Fri Sat/f Abigail 2000": "continue/18 8/farmer 18 13 0 Abigail 20 7 1 Marlon 20 4 2/skippable/fade/pause 400/animate Abigail false false 900 50 51/specificTemporarySprite swordswipe 20 7/playSound swordswipe/pause 300/speak Marlon \"Widen your stance!\"/pause 200/animate Abigail false false 900 51 50/specificTemporarySprite swordswipe 20 7/playSound swordswipe/pause 200/speak Marlon \"Stay low to the ground!\"/animate Abigail false false 900 50 39 51 50/specificTemporarySprite swordswipe 20 7/playSound swordswipe/pause 200/speak Marlon \"Focus!\"/pause 200/animate Abigail false false 900 50 30 50 30/pause 200/speak Abigail \"Just...#$b#Just a breather...\"/animate Abigail false false 900 50 30 50 30/pause 200/speak Marlon \"Hm.#$b#Fine.#$b#Get some water.\"/move farmer 0 -6 1 true/animate Abigail false false 900 50 30 51 15/pause 100/faceDirection Abigail 3/pause 200/speak Abigail \"Oh!#$b#Hey @.#$b#Going for a mine run?\"/pause 200/faceDirection Abigail 3/quickQuestion She seems out of breath.#How's training going?#Wow, you're pretty tired.#Yeah, I'd better get going.(break)speak Abigail \"It's great!#$b#I'm learning a lot.#$b#Leaves me exhausted though!$1\"(break)speak Abigail \"Yeah, Marlon works me pretty hard.#$b#And this sword is super heavy.$2#$b#On the bright side, I've been sleeping really well lately.$1\"(break)speak Abigail \"Good luck!\"/pause 200/speak Marlon \"If you can talk, you can train!#$b#Hop to it!\"/pause 200/emote Abigail 28/pause 200/speak Abigail \"See you later @!\"/pause 200/animate Abigail false false 200 50 51/specificTemporarySprite swordswipe 39 11/playSound swordswipe/move farmer 0 -10 0 true/pause 300/animate Abigail false false 250 51 50/specificTemporarySprite swordswipe 39 11/playSound swordswipe/pause 400/animate Abigail false false 250 50 39 51 50/specificTemporarySprite swordswipe 39 11/playSound swordswipe/pause 300/animate Abigail false false 250 50 39 51 50/specificTemporarySprite swordswipe 39 11/playSound swordswipe/end/fade",
+		}
+	},
+
+	{
+	// Event ID 262213005
+	"LogName": "Si Adventurer Abigail ME 05",
+	"Action": "EditData",
+	"Target": "Data/Events/Mine", //
+	"Entries": {
+		"262213005/e 262213003/A AdvAbiDelay3/d Mon Wed Thu Fri Sat Sun/f Abigail 2000": "continue/18 8/farmer 18 12 0 Abigail 43 8 0 Dwarf 43 6 2/addConversationTopic AdvAbiDwarf 5/skippable/fade/pause 200/move farmer 0 -4 0/speak Abigail \"AAAAAAAAAHHHH!$7\"/faceDirection farmer 1/emote farmer 16/speed farmer 7/viewport move 14 0 1800/move farmer 20 0 1/pause 200/speak Abigail \"Stay right there!$5#$b#I'm warning you!$5\"/pause 200/speak Dwarf \"Who are you?\"/pause 200/shake Abigail 200/pause 200/playSound throwDownITem/pause 100/playSound clank/pause 200/jump Abigail/pause 200/speak Abigail \"Ah!$7#$b#I dropped my sword!$7\"/pause 200/speak Dwarf \"Identify yourself human!\"/pause 200/emote farmer 16/pause 100/move farmer 4 0 1/pause 200/emote farmer 36/pause 200/speak Abigail \"@!$1#$b#Help me!#$b#I don't know what this thing is, but we can't let it get out!$3\"/pause 200/speak Dwarf \"@!#$b#Take care, this one appears hostile.\"/question fork0 \"#Calm down.#Stand down!\"/pause 200/speak Dwarf \"Do you know this loud human?\"/pause 200/faceDirection farmer 0/pause 200/emote farmer 40/faceDirection Abigail 3/pause 200/speak Dwarf \"Your friend?#$b#Why are they in my cave?\"/pause 200/emote farmer 40/emote Abigail 8/speak Dwarf \"Interesting.\"/pause 200/speak Abigail \"Are you...$2#$b#Talking to it?$2\"/pause 200/pause 200/faceDirection farmer 1/pause 200/emote farmer 32/question fork1 \"#It's okay, they're a friend.#Don't worry, they're not an enemy.\"/pause 200/emote Abigail 8/pause 200/speak Abigail \"I don't get it.$2\"/pause 200/question fork2 \"#They're a dwarf.#They're a merchant.#They aren't going to attack you.#This is their home.\"/pause 200/emote Abigail 40/pause 200/speak Dwarf \"Tell your friend they have terrible form.#$b#I could have taken them down easily.\"/pause 200/faceDirection Abigail 0/emote farmer 28/pause 200/quickQuestion They say...#You need to practice your stance.#You looked very brave.#You were the worst fighter they've ever seen.(break)speak Abigail \"I'm working on it!$5\"(break)speak Abigail \"Oh!$1#$b#Uh, thanks!$4\"(break)speak Abigail \"Well gee, thanks.$5\"/pause 200/emote Abigail 16/pause 200/faceDirection Abigail 3/speak Abigail \"Wait, you know their language?$7\"/pause 200/emote farmer 40/pause 200/playSound backpackIN/pause 200/playSound newRecipe/speak Abigail \"What's this?$2#$b#'Dwarf Translation Guide'?$2#$b#Huh.\"/pause 200/emote farmer 40/pause 200/speak Abigail \"You're letting me borrow this?#$b#Don't you need it?\"/pause 200/emote farmer 40/pause 200/speak Abigail \"Already learned it all, huh?#$b#Well then it must be pretty good.$1\"/playSound newRecipe/pause 100/playSound newRecipe/pause 200/playSound newRecipe/emote Abigail 40/pause 200/speak Abigail \"Alright, I'll give it a shot.#$b#Thanks @!$1#$b#And uh...\"/pause 200/playSound newRecipe/pause 100/playSound newRecipe/pause 200/playSound newRecipe/pause 200/faceDirection Abigail 0/pause 200/speak Abigail \"'Thanks smaolunu?'$1\"/pause 200/emote Dwarf 28/pause 200/speak Dwarf \"Their pronunciation is horrible.\"/pause 200/speak Abigail \"I don't know what you just said, but I promise I'll learn!$1\"/pause 200/emote farmer 28/end/fade",
+		}
+	},
+
+	{
+	// Event ID 262213006
+	"LogName": "Si Adventurer Abigail ME 06",
+	"Action": "EditData",
+	"Target": "Data/Events/WizardHouse", //
+	"Entries": {
+		"262213006/e 262213003/A AdvAbiDelay3/d Mon Tue Wed Fri Sat Sun/f Abigail 2000": "continue/7 17/farmer 8 23 0 Abigail 4 19 2 Wizard 3 17 2/addConversationTopic AdvAbiWiz 5/skippable/fade/pause 200/move farmer 0 -4 3 true/pause 200/emote Abigail 40/pause 200/playSound bubbles/pause 200/speak Wizard \"Now gently pour in the frog eyes.\"/pause 200/playSound dropItemInWater/speak Abigail \"Eurgh...$2\"/playSound dropItemInWater/pause 100/playSound dropItemInWater/playSound dropItemInWater/pause 200/emote farmer 28/pause 200/emote Abigail 16/faceDirection Abigail 1/pause 200/speak Abigail \"@!#$b#What are you doing here?\"/pause 200/emote farmer 40/pause 200/speak Wizard \"Focus!\"/pause 200/faceDirection Abigail 2/playSound dropItemInWater/playSound dropItemInWater/pause 200/speak Abigail \"Marlon asked Ras here to teach me how to make potions.#$b#Kind of cool, isn't it?$1\"/pause 20/playSound dropItemInWater/pause 100/playSound dropItemInWater/emote Abigail 28/pause 200/speak Abigail \"But also gross.$2#$b#VERY gross.$2\"/pause 200/speak Wizard \"Potion-making is a delicately refined art.#$b#Over time, you will find a certain beauty in it.\"/pause 200/emote Wizard 40/pause 200/speak Wizard \"And that's 'Master Wizard' to you, young lady!\"/pause 200/playSound dropItemInWater/playSound dropItemInWater/pause 200/playSound bubbles/pause 200/speak Wizard \"Now, sprinkle the fiddlehead stalk over the concoction.#$b#If you've done everything correctly, it should turn blue.\"/pause 200/playSound leafrustle/pause 400/playSound flameSpell/glow 255 255 255/pause 300/emote Wizard 40/speak Abigail \"Well that doesn't look blu-\"/playSound flameSpell/glow 255 0 0/pause 200/emote Wizard 16/pause 200/playSound thunder_small/pause 200/speak Wizard \"Everyone get down!\"/playSound flameSpell/glow 255 0 0/jump farmer/jump Abigail/speed farmer 4/speed Abigail 4/speed Wizard 4/move Abigail 8 0 2 true/move Abigail 0 1 3 true/move farmer 4 0 2 true/move farmer 0 1 3 true/move Wizard 5 0 0 true/playSound flameSpell/glow 255 0 0/playSound flameSpell/glow 255 0 0/playSound flameSpell/glow 255 0 0/pause 400/playSound flameSpell/glow 255 0 0/pause 300/playSound flameSpell/glow 255 0 0/pause 200/playSound flameSpell/glow 255 0 0/pause 100/playSound thunder_small/glow 0 0 0 true/playSound thunder/viewport -1000 -1000/pause 200/playSound thunder_small/playSound flameSpellHit/pause 200/playSound flameSpellHit/playsound flameSpellHit/playSound debuffSpell/playSound potterySmash/playSound sheep/playSound trainWhistle/playSound Meteorite/playSound fishSlap/pause 100/playSound fishSlap/playSound breakingGlass/stopMusic/playSound thunder/pause 200/move Wizard -5 0 3/pause 400/speak Abigail \"...Is it over?$7\"/pause 200/playSound flameSpell/pause 500/speak Wizard \"I think we'll end today's lesson here.\"/pause 300/speak Abigail \"...Right.$2\"/pause 200/end/fade",
+		}
+	},
+
+	{
+	// Event ID 262213007 HIDDEN
+	"LogName": "Si Adventurer Abigail HE 02",
+	"Action": "EditData",
+	"Target": "Data/Events/Town", //
+	"Entries": {
+		"262213007/e 262213003/t 600 650": "none/-1000 -1000/farmer -100 -100 2/addConversationTopic AdvAbiDelay4 4/end",
+		}
+	},
+
+	{
+	// Event ID 262213008
+	"LogName": "Si Adventurer Abigail LE 01",
+	"Action": "EditData",
+	"Target": "Data/Events/Farm", // Si_AA_Mail_01 
+	"Entries": {
+		"262213008/e 262213007/A AdvAbiDelay4/x Si_AA_Mail_01": "null",
+		}
+	},
+
+	{
+	// Event ID 262213009
+	"LogName": "Si Adventurer Abigail ME 07",
+	"Action": "EditData",
+	"Target": "Data/Events/Town", //
+	"Entries": {
+		"262213009/e 262213008/n Si_AA_Mail_01/t 600 650/f Abigail 2000": "continue/42 58/farmer 40 57 1 Abigail -1000 -1000 2/addConversationTopic AdvAbiRun1 1/skippable/fade/pause 300/move farmer 3 0 0/pause 200/playsound stoneStep/pause 200/playSound stoneStep/pause 200/playSound stoneStep/pause 400/playSound doorOpen/warp Abigail 44 57/faceDirection Abigail 2/pause 200/faceDirection farmer 1/pause 100/emote Abigail 24/pause 300/faceDirection Abigail 3/pause 200/emote Abigail 8/pause 200/question fork0 \"#Marlon told me to make sure you got up early.#Rise and shine! It's time for your morning run.\"/pause 200/emote Abigail 40/pause 200/speak Abigail \"Oh, right.$2#$b#My...$2#$b#*Yawn*$2#$b#Early morning training.$2\"/pause 200/emote Abigail 24/pause 200/speak Abigail \"Let me just...$2\"/pause 200/emote Abigail 24/pause 200/emote Abigail 24/pause 200/emote Abigail 24/emote farmer 28/pause 200/emote farmer 40/emote farmer 16/pause 200/playSound whistle/jump Abigail/pause 200/speak Abigail \"I'm up! I'm up!$7#$b#I'm going!$7\"/pause 200/faceDirection Abigail 1/pause 100/speed Abigail 5/move Abigail 5 0 0 true/globalFade/viewport -1000 -1000/move Abigail 0 -2 0/end/fade",
+		}
+	},
+
+	{
+	// Event ID 262213010
+	"LogName": "Si Adventurer Abigail ME 08",
+	"Action": "EditData",
+	"Target": "Data/Events/Forest", //
+	"Entries": {
+		"262213010/e 262213003/A AdvAbiDelay3/t 2100 2300/f Abigail 2000": "continue/99 87/farmer 102 81 2 Abigail 105 87 2 Marlon 94 69 2/addConversationTopic AdvAbiLost 3/skippable/fade/pause 300/emote Abigail 40/pause 200/faceDirection Abigail 3/pause 200/emote farmer 8/facedirection Abigail 1/pause 200/faceDirection Abigail 2/pause 200/emote Abigail 28/pause 100/move farmer 0 3 2 true/playSound leafrustle/jump Abigail/pause 100/faceDirection Abigail 0/pause 200/speak Abigail \"Wh-who's there?$2\"/pause 200/move farmer 0 3 1 true/playSound leafrustle/pause 200/playSound leafrustle/shake Abigail 100/playSound leafrustle/faceDirection Abigail 3/pause 200/emote Abigail 16/pause 200/speak Abigail \"@!\"/pause 200/emote farmer 32/pause 200/speak Abigail \"You startled me!$1#$b#...But I'm fine.$2\"/pause 200/quickQuestion What are you doing out here?#Foraging.#Buying a hat from a mouse.#You first.(break)speak Abigail \"Must be some good pickings to be out so late.\"(break)speak Abigail \"Very funny.$1\"(break)speak Abigail \"Alright, so basically-\"/pause 100/playSound leafrustle/pause 50/playSound batFlap/pause 100/jump Abigail/pause 100/faceDirection Abigail 0/pause 100/faceDirection Abigail 1/pause 100/faceDirection Abigail 2/pause 100/emote Abigail 28/pause 200/emote farmer 8/pause 200/faceDirection Abigail 3/pause 200/speak Abigail \"Marlon taught me orienteering this morning.#$b#...Then he told me to find my way back to town on my own.$2#$b#...I'm still working on that.$2\"/pause 200/quickQuestion #So you're lost?#He left you all alone?(break)speak Abigail \"I'm not lost!$5#$b#I'm just taking my time.$3\"(break)speak Abigail \"What, you think I can't handle it?$5#$b#I'm doing just fine.$3\"/pause 200/emote farmer 40/pause 200/speak Abigail \"And besides, I've got this flare he showed me how to use.#$b#Just in case.\"/pause 200/emote farmer 20/pause 200/speak Abigail \"Anyway, you can go now.#$b#I can take it from here.\"/pause 200/emote farmer 32/pause 200/faceDirection farmer 0/pause 200/move farmer 0 -2 0/faceDirection Abigail 0/textAboveHead Abigail \"Just!\"/pause 200/faceDirection farmer 1/pause 100/emote farmer 8/pause 400/emote Abigail 40/pause 200/emote Abigail 28/pause 200/speak Abigail \"Could you, uh...$2#$b#Point which way is north, please?$3#$b#To make things quicker!$5\"/pause 200/emote farmer 56/pause 200/speak Abigail \"...Thanks.$3\"/pause 200/emote farmer 32/faceDirection farmer 0/pause 100/move farmer 0 -4 0 true/faceDirection Abigail 2/emote Abigail 40/pause 100/globalFade/viewport -1000 -1000/warp farmer 94 75/faceDirection farmer 0/viewport 87 72/fade/pause 200/move farmer 0 -2 0/pause 200/emote farmer 16/pause 200/emote Marlon 56/pause 200/speak Marlon \"Good evening @.\"/pause 200/emote farmer 8/pause 200/speak Marlon \"You didn't honestly believe I'd leave Abigail out here completely on her own?#$b#Not this early in her training at least.\"/pause 200/emote farmer 32/pause 200/speak Marlon \"Don't worry, she is in no danger.#$b#I'll step in if anything happens...#$b#But I find the true value of this exercise to be the self-determination gained from making her own way through the forest.#$b#It was one of the best things I learned from my own mentor, many years ago.#$b#Granted, rather than a nearby forest, I was left at the top of a mountain on another continent.\"/pause 200/emote farmer 16/pause 200/speak Marlon \"No, I'm not going to do that.\"/pause 200/emote Marlon 40/pause 200/speak Marlon \"Well, not yet at least.\"/pause 200/emote farmer 28/pause 200/speak Marlon \"In any case, it's quite late.#$b#You'd better get going.\"/pause 200/faceDirection farmer 2/pause 200/emote farmer 40/pause 200/speak Marlon \"Don't worry.#$b#She will be alright.\"/pause 200/faceDirection farmer 0/pause 200/speak Marlon \"You have my word.\"/pause 200/emote farmer 32/pause 300/end/fade",
+		}
+	},
+
+
+	{
+	// Event ID 262213011
+	"LogName": "Si Adventurer Abigail LE 02",
+	"Action": "EditData",
+	"Target": "Data/Events/Farm", // Si_AA_Mail_02 
+	"Entries": {
+		"262213011/e 262213010/x Si_AA_Mail_02": "null",
+		}
+	},
+
+	{
+	// Event ID 262213012
+	"LogName": "Si Adventurer Abigail LE 03",
+	"Action": "EditData",
+	"Target": "Data/Events/Farm", // Si_AA_Mail_03
+	"Entries": {
+		"262213012/e 262213003/e 262213004/e 262213005/e 262213006/e 262213009/e 262213011/x Si_AA_Mail_03": "null",
+		}
+	},
+
+	{
+	// Event ID 262213013
+	"LogName": "Si Adventurer Abigail ME 09",
+	"Action": "EditData",
+	"Target": "Data/Events/AdventureGuild", // 
+	"Entries": {
+		"262213013/e 262213012/f Abigail 2000": "continue/7 13/farmer 4 16 0 Abigail 6 16 0 Marlon 5 13 2/skippable/fade/pause 400/speak Marlon \"Rope?\"/pause 200/speak Abigail \"Check!\"/pause 200/speak Marlon \"Knife?\"/pause 200/speak Abigail \"Check!\"/pause 200/speak Marlon \"Water?\"/pause 200/speak Abigail \"Check!\"/pause 200/speak Marlon \"Rations?\"/pause 200/speak Abigail \"Check!\"/pause 200/speak Marlon \"First aid kit?\"/pause 200/speak Abigail \"Check!\"/pause 200/speak Marlon \"Sword?\"/pause 200/speak Abigail \"Check!\"/pause 200/emote Marlon 40/pause 200/speak Marlon \"Have I missed anything @?\"/pause 200/quickQuestion #I think you've covered it all.#Excitement!(break)speak Marlon \"Good.\"(break)speak Abigail \"Check!$1\"/pause 200/speak Marlon \"And I know you're experienced at this, but do you also have everything you need @?\"/pause 200/emote farmer 32/pause 200/speak Marlon \"Alright.#$b#Remember, we will be entering a dangerous environment.#$b#Abigail, @ and myself will protect you from anything we might encounter.#$b#However you must still remain cautious at all times.#$b#If there is an emergency, exit the mines immediately.#$b#Do not attempt to fight unless you have absolutely no other option.#$b#Do you understand?\"/pause 200/speak Abigail \"Understood.$6\"/pause 200/speak Marlon \"Alright, let's be off.\"/pause 200/faceDirection Abigail 3/faceDirection farmer 1/pause 200/speak Abigail \"This is going to be so cool!$1\"/pause 200/emote farmer 32/pause 300/end/fade",
+
+		}
+	},
+
+	{
+	// Event ID 262213014
+	"LogName": "Si Adventurer Abigail ME 10",
+	"Action": "EditData",
+	"Target": "Data/Events/Mine", // 
+	"Entries": {
+		"262213014/e 262213013/f Abigail 2000": "Cavern/-1000 -1000/farmer -100 -100 2 Abigail -100 -100 2 Marlon -100 -100 2/skippable/changeToTemporaryMap Custom_Si_AA_Map1/viewport 15 5/fade/pause 400/playSound stairsdown/warp Marlon 14 5/pause 400/playSound stairsdown/warp farmer 16 5/faceDirection farmer 2/pause 400/playSound stairsdown/warp Abigail 15 5/faceDirection Abigail 2/pause 400/faceDirection Abigail 3/pause 200/faceDirection Abigail 2/pause 200/faceDirection Abigail 1/pause 200/faceDirection Abigail 2/pause 200/speak Abigail \"Woah.#$b#So this is what the mines look like?\"/pause 200/speak Marlon \"At the upper levels, yes.#$b#As we descend further, they start to change.#$b#@, what type of caverns do you find yourself exploring the most?\"/pause 200/quickQuestion What levels do you travel to often?#Ice caverns#Lava caverns#Regular caverns#Skull caverns#Volcanoes#Actually, I don't come down here too often(break)speak Abigail \"Those must be pretty cool.\"(break)speak Abigail \"Wow, like, actual lava?#$b#Awesome!$1\"(break)speak Abigail \"Huh, you must be pretty familiar with these levels then.\"(break)speak Marlon \"Those can be found in the desert.#$b#They are very advanced, so we'll save them for when you are much further along in your training.\"(break)speak Abigail \"WOW, there are volcanoes around here?$7\"\\speak Marlon \"There are a few on the islands nearby.\"(break)speak Abigail \"Huh, I wouldn't have guessed.\"/pause 200/emote farmer 56/pause 200/speak Marlon \"Alright, let's get started.\"/pause 200/playSound slime/pause 200/playSound slime/pause 100/playSound slime/jump Abigail/speak Abigail \"What was that?$7\"/pause 200/speak Marlon \"There's likely a slime nest nearby.#$b#Proceed with caution.\"/pause 200/emote Abigail 28/pause 200/speak Abigail \"R-right...$2\"/pause 200/move Abigail 0 1 2/pause 100/shake Abigail 200/pause 100/move Abigail 0 1 2/pause 100/shake Abigail 200/pause 100/move Abigail 0 1 2/playSound batScreech/jump Abigail/speak Abigail \"AH!$7\"/speed Abigail 4/move Abigail 0 -3 0/warp Abigail -100 -100/playSound stairsdown/faceDirection farmer 3/emote farmer 40/pause 200/emote Marlon 40/pause 200/speak Marlon \"Hmm...#$b#Perhaps it was too soon.\"/pause 200/question fork0 \"#It was probably just first-time nerves.#You can't give up on her so quickly.\"/pause 200/emote Marlon 40/pause 200/speak Marlon \"I suppose you are correct.#$b#Could you go and find her?#$b#She may be more receptive to you than myself at the moment.\"/pause 200/emote farmer 56/pause 300/end/fade",
+
+		}
+	},
+
+	{
+	// Event ID 262213015
+	"LogName": "Si Adventurer Abigail ME 11",
+	"Action": "EditData",
+	"Target": "Data/Events/Mountain", // 
+	"Entries": {
+		"262213015/e 262213014/f Abigail 2000": "none/-1000 -1000/farmer -100 -100 0 Abigail 53 8 2/skippable/showFrame Abigail 53/viewport 53 8/fade/pause 300/warp farmer 54 5/faceDirection farmer 2/pause 100/move farmer 0 2 2/pause 100/shake Abigail 100/emote farmer 16/pause 100/move farmer 0 1 3/pause 200/emote farmer 40/pause 200/quickQuestion Abigail...#How are you feeling?#Wow, you took off like a bat! Haha(break)speak Abigail \"Just fine, thanks.$5\"(break)speak Abigail \"Yeah, haha, totally...$2\"/pause 200/emote farmer 28/pause 200/emote Abigail 40/pause 200/speak Abigail \"...Sorry.$2\"/playMusic desolate/pause 200/faceDirection farmer 2/pause 100/showFrame farmer 54/showFrame Abigail 25/pause 400/speak Abigail \"I... I thought I was ready.$2#$b#Really, I did!$6#$b#But then I...$6#$b#I don't know.$2\"/pause 400/speak Abigail \"I got down the ladder with you, and everything felt okay.$2#$b#But then I heard those sounds.$2#$b#And suddenly, it was like the place was too cramped and dark.$2#$b#And my sword felt a lot heavier.$2\"/pause 200/speak Abigail \"I hope Marlon isn't disappointed in me.$2#$b#I just had to get out of there...$2\"/pause 300/emote farmer 40/pause 300/speak Abigail \"Maybe I'm just not cut out for this.$2#$b#What if this isn't what I want?$2\"/pause 200/quickQuestion What do you think?#Do you really want to give up so easily?#It was pretty scary when I started out, it took a lot of practice to get used to.#That's possible, but can you really decide based on one incident?#Failure is how you learn.(break)speak Abigail \"...$2#$b#Not yet.$6#$b#But I guess I'm still realizing what I'm up against.$2\"(break)speak Abigail \"You got scared too?$2#$b#I guess that's fair, you are from the city after all...$6\"(break)speak Abigail \"I guess you're right.$2#$b#I'm just still realizing what I'm up against.$2\"(break)speak Abigail \"Yeah, I guess thats true.$6\"/pause 300/emote Abigail 40/pause 200/speak Abigail \"I want to try again.$6\"/pause 200/emote farmer 20/pause 200/speak Abigail \"If anything happens, you'll keep me safe, right?$2\"/pause 200/question fork0 \"#You bet!#I promise.#Nothing will happen, don't worry.#Do or do not, there is no try.\"/pause 200/stopMusic/faceDirection Abigail 2/pause 200/speak Abigail \"Alright.$6\"/pause 200/faceDirection Abigail 0/faceDirection farmer 3/pause 200/speak Abigail \"Let's go.\"/pause 300/end/fade",
+
+
+		}
+	},
+
+	{
+	// Event ID 262213016
+	"LogName": "Si Adventurer Abigail ME 12",
+	"Action": "EditData",
+	"Target": "Data/Events/Mine", // 
+	"Entries": {
+		"262213016/e 262213015/f Abigail 2000": "Cavern/-1000 -1000/farmer -100 -100 2 Abigail -100 -100 2 Marlon 13 6 2/addConversationTopic AdvAbiFirstMine 7/skippable/changeToTemporaryMap Custom_Si_AA_Map1/viewport 15 5/fade/pause 300/emote Marlon 40/pause 400/playSound stairsdown/emote Marlon 16/pause 400/warp Abigail 15 5/faceDirection Abigail 2/pause 200/move Abigail 0 2 3 true/playSound stairsdown/warp farmer 15 5/faceDirection farmer 2/move Abigail -2 0 0/pause 200/speak Marlon \"How are you feeling?\"/pause 200/speak Abigail \"I'm okay.#$b#Sorry about that.$2\"/pause 200/speak Marlon \"We can try this again another time if you'd prefer.#$b#There is no rush.\"/pause 200/speak Abigail \"I...$2\"/pause 500/emote farmer 32/pause 300/speak Abigail \"I'd rather try again now.$6\"/pause 200/speak Marlon \"Are you sure?\"/pause 200/speak Abigail \"I'm sure.\"/pause 200/speak Marlon \"Very well.#$b#If you'll look down here, you might notice monster tracks.#$b#Can you recognize them from the reading I assigned you?\"/faceDirection Abigail 3/pause 200/speak Marlon \"Feel free to join in as well @. This knowledge may be valuable to you.\"/pause 200/move farmer -3 0 2 true/emote Abigail 40/pause 200/end/fade",
+
+		}
+	},
+
+
+
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+{
+
+	// Guild Management schedule, shop changes, etc
+	// Summer 4-10 (arc 3)
+	// 2nd of each month (Tuesday) (arc 2)
+
+	"Changes": [
+
+		// Marlon Guild Schedule //////////////////////////////////////////////////////////
+
+		// Monthly
+		{
+			"LogName": "Si AA Mod Marlon Guild Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Marlon",
+			"Entries": {
+				"spring_2": "610 AdventureGuild 4 11 2/820 Blacksmith 2 16 1/1820 Saloon 3 23 3/2000 AdventureGuild 6 5 2",
+				"summer_2": "610 AdventureGuild 4 11 2/820 WizardHouse 12 21 3/2000 AdventureGuild 6 5 2",
+				"fall_2": "GOTO spring_2",
+				"winter_2": "GOTO fall_2",
+			},
+			"When":
+        		{
+           			"GuildSched": "true",
+        		}
+		},
+
+		// Summer
+		// {
+		// 	"LogName": "Si AA Mod Marlon Guild Week",
+		// 	"Action": "EditData",
+		// 	"Target": "Characters/schedules/Marlon",
+		// 	"Entries": {
+		// 		"summer_4": "610 AdventureGuild 4 11 2/820 Blacksmith 2 16 1/1820 Saloon 3 23 3/2000 AdventureGuild 6 5 2",
+		// 		"summer_5": "GOTO summer_4",
+		// 		"summer_6": "GOTO summer_4",
+		// 		"summer_7": "610 AdventureGuild 4 11 2/820 WizardHouse 12 21 3/2000 AdventureGuild 6 5 2",
+		// 		"summer_8": "GOTO summer_7",
+		// 		"summer_9": "GOTO summer_7",
+		// 		"summer_10": "GOTO summer_7",
+		// 		"marriage_summer_5": "820 Blacksmith 2 16 1/1820 Saloon 3 23 3/2000 BusStop -1 23 3",
+		// 		"marriage_summer_8": "820 WizardHouse 12 21 3/2000 BusStop -1 23 3",
+		// 		"marriage_summer_10": "GOTO marriage_summer_8",
+		// 	},
+		// 	"When":
+        // 		{
+        //    			"GuildWeek": "true",
+        // 		}
+		// },
+
+	]
+
+}

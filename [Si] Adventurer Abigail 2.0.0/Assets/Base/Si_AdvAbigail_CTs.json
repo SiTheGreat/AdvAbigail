@@ -1,0 +1,85 @@
+{
+
+	// AA: conversation topics only
+
+	"Changes": [
+
+
+	{
+		"LogName": "Si AA Abigail Conversation Topics",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Abigail",
+		"Entries": {
+			"AdvAbiDelay1": "It's been pretty quiet around here lately.#$b#I kind of wish something would happen.",
+			"AdvAbiDelay2": "I'm still thinking about what you said.#$b#I haven't made a decision yet, but you'll be the first to know when I do!",
+			"AdvAbi_M_Start": "Marlon started me off with a bunch of books to read.$2#$b#I wish I could get to the combat part of training already!",
+			"AdvAbiDelay3": "Marlon gave me a really battered old sword to train with.#$b#I don't think it could slice bread, much less a monster.#$b#But I guess that's the point, huh?$1",
+			"AdvAbiLost": "You got my letter right?#$b#Told you I'd be fine!#$b#No matter how long it took me...$2#$b#*Yawn*$2",
+			"AdvAbiRun1": "*Yawn*$2#$b#I'm so tired...$2",
+			"AdvAbiFirstMine": "I had so much fun in the mines!#$b#Well, maybe except for that lecture Marlon gave us about monster poop.$1#$b#Thanks for convincing me to go back, @.",
+			"AdvAbiWeapons":"The dwarf in the mines told me they sell bombs.#$b#Do you use those for fighting monsters too?#$b#Not sure whether I should bring it up with Marlon or Ras.#$b#They've both been trying to to keep me away from flammable objects for some reason...$1",
+			"AdvAbiShop": "Managing the guild isn't anything like the general store.#$b#I have to know all the weapons inside and out so I can help people pick what they need, and keep track of things like cave-ins and attacks.#$b#And don't even get me started on all the lost supplies I have to help recover!$1",
+			"AdvAbiSpar": "My sword skills have been getting better.#$e#I got really close to landing a hit on Marlon during training!",
+			"AdvAbiMtn": "I wonder if the magic and creatures we use for game nights are inspired by reality.#$e#I should ask Marlon if monsters like Rocs actually exist.",
+			"AdvAbiSlay": "...$2",
+			"AdvAbiFriends": "It feels good to get things off my chest.#$e#And now I have people I can talk about my adventures to!#$e#Besides you of course.$1",
+		},
+	},
+	
+	{
+		"LogName": "Si AA Caroline Conversation Topics",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Caroline",
+		"Entries": {
+			"AdvAbiDelay2": "Abigail's been kind of quiet lately.#$b#Like she's reflecting on something important.#$b#I guess she's just at that age...",
+			"AdvAbiLost": "Abigail got home very late recently.#$b#I hope nothing's wrong...$2",
+			"AdvAbiRun1": "Abigail was up before breakfast today.#$b#That's out of the ordinary for her.$2#$b#She seemed pretty tired too...$2",
+			"AdvAbiSpar": "I noticed some bruises on Abigail's arm yesterday.$2#$b#She told me she fell, but I'm still concerned.$2#$e#Do you think everything's alright?",
+			"AdvAbiSlay": "Abigail hasn't spoken to me at all today.$2#$e#Could you talk to her?$2",
+			"AdvAbiFriends": "Abigail's friends came to visit her, and she seems a lot happier now.#$e#I'm glad.",
+		},
+	},
+
+	{
+		"LogName": "Si AA Pierre Conversation Topics",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Pierre",
+		"Entries": {
+			"AdvAbiLost": "Abigail was out late last night.$2#$b#You better not have had anything to do with it!$3",
+			"AdvAbiRun1": "Abigail got up early this morning.$2#$b#She wouldn't tell me why.$2",
+			"AdvAbiFirstMine": "Abigail's been spending a lot of time out of the house lately.$2#$b#I wonder what she's up to...$2",
+			"AdvAbiShop": "Abigail hasn't been helping around the shop as much lately.$2#$b#Doesn't she care about her future?$2#$b#It's good experience!",
+			"AdvAbiSlay": "Have you seen Abigail today?$2#$e#I've been looking for her everywhere.$2",
+		},
+	},
+
+	{
+		"LogName": "Si AA Sam Conversation Topics",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Sam",
+		"Entries": {
+			"AdvAbiRun1": "I just saw Abigail and she looked really tired.$2#$e#Do you think she's okay?$2",
+			"AdvAbitMtn": "Abby's pretty tough, so she's probably okay.#$e#But if she needs help with something, me and Sebastian will definitely be there!$1",
+			"AdvAbiSlay": "Abby ghosted us for game night yesterday.$2#$e#Do you know if something happened?$2",
+			"AdvAbiTalk": "Abby said she wanted to talk to Sebastian and I.#$e#I hope this means she's finally opening up.",
+			"AdvAbiFriends": "I still can't believe Abby's been going on real adventures!#$e#That's way past cool!$1#$e#I should ask her to bring back some souvenirs.",
+		},
+	},
+
+	{
+		"LogName": "Si AA Sebastian Conversation Topics",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Sebastian",
+		"Entries": {
+			"AdvAbiLost": "Abigail called off game night this week.$2#$e#Do you think she's alright?$2",
+			"AdvAbiMtn" : "I hope Abigail talks to us about whatever is going on.$2#$e#Sam and I consider her a good friend, so we want to be able to help her.$2#$b#But we can't if she won't talk about it.$2",
+			"AdvAbiSlay": "Do you know where Abigail is?$2#$e#I want to check on her.$2",
+			"AdvAbiTalk": "Abigail asked me and Sam to meet her in her room.#$e#That's a good sign.",
+			"AdvAbiFriends": "I'm glad Abigail is following her dreams.#$e#I hope she doesn't get hurt.$2#$e#But this is her chosen path, and I'm sure she will do well.$1",
+		},
+	},
+
+	]
+
+
+}

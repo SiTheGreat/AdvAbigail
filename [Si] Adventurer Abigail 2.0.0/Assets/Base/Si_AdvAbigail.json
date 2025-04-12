@@ -1,0 +1,89 @@
+{
+
+	"Changes": [
+
+		// Events //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si Adventurer Abigail Events Arc 1",
+			"Action": "Include",
+			"FromFile": "Assets/Base/Si_AdvAbigail_Events1.json",
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+    	},
+
+		{
+			"LogName": "Si Adventurer Abigail Mail",
+			"Action": "Include",
+			"FromFile": "Assets/Base/Si_AdvAbigail_Mail.json",
+    	},
+
+		{
+			"LogName": "Si Adventurer Abigail Events Arc 2",
+			"Action": "Include",
+			"FromFile": "Assets/Base/Si_AdvAbigail_Events2.json",
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"ShortVersion": false
+			}
+    	},
+
+		// Modified Events //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si Adventurer Abigail Modified Vanilla Events",
+			"Action": "Include",
+			"FromFile": "Assets/Base/Si_AdvAbigail_ChangeEvents.json",
+			"When": {
+				"EditEvents": true
+			}
+    	},
+
+		// Schedules //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si Adventurer Abigail Schedule",
+			"Action": "Include",
+			"FromFile": "Assets/Base/Si_AdvAbigail_Sched.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262213012": true,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+
+		// Guild //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si Adventurer Abigail Guild Shop",
+			"Action": "Include",
+			"FromFile": "Assets/Base/Si_AdvAbigail_Guild.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262213018": true,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			}
+    	},
+
+		// Dialogue //////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si Adventurer Abigail Conversation Topics",
+			"Action": "Include",
+			"FromFile": "Assets/Base/Si_AdvAbigail_CTs.json",
+		},
+
+		{
+			"LogName": "Si Adventurer Abigail Dialogue",
+			"Action": "Include",
+			"FromFile": "Assets/Base/Si_AdvAbigail_Dial.json",
+			"When": {
+				"DialoguePatches": true,
+				"HasSeenEvent:hostPlayer |contains=262213012": true,
+			}
+		}
+
+		// End //////////////////////////////////////////////////////////
+
+	],
+
+}
