@@ -97,7 +97,7 @@
 	{
 		"Action": "Load",
 		"Target": "Mods/Si.BC/AASwordBook",
-		"FromFile": "Data/SiAdventurerAbigail/AASwordBook.png"
+		"FromFile": "Assets/Crossovers/BC/AASwordBook.png"
 	},
 
 	{
