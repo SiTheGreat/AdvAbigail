@@ -52,15 +52,15 @@
 			}
 		},
 
+		// Guild //////////////////////////////////////////////////////////
+
 		{
-			"LogName": "Si Adventurer Abigail Guild Schedule",
+			"LogName": "Si Adventurer Abigail Guild Shop",
 			"Action": "Include",
-			"FromFile": "Assets/Base/Si_AdvAbigail_GuildSched.json",
+			"FromFile": "Assets/Base/Si_AdvAbigail_Guild.json",
 			"When": {
 				"HasSeenEvent:hostPlayer |contains=262213018": true,
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
-				"HasMod: |contains=Wolf.Marlon": false,
-				"HasMod: |contains=Yoshimax.BefriendMarlon": false
 			}
     	},
 

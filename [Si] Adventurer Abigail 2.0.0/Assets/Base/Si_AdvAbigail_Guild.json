@@ -1,0 +1,157 @@
+{
+
+	// Guild Management schedule, shop changes, etc
+	// Summer 4-10 (arc 3)
+	// 2nd of each month (Tuesday) (arc 2)
+
+	"Changes": [
+
+		// Shop //////////////////////////////////////////////////////////
+
+		// Monthly main shop
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"AdventureShop",
+				"Owners",
+				"#0"
+			],
+			"Entries": {
+				"Portrait": "Abigail",
+				"Id": "Abigail",
+        		"Name": "Abigail",
+				"Dialogues": [
+					{
+						"Id": "Si.AAShopString1",
+						"Dialogue": "Tell me what you need. I can handle it!"
+					}
+				]
+				
+			},
+			"When":
+        		{
+           			"GuildSched": "true",
+					"Day |contains= 2": true
+        		}
+		},
+
+		// Monthly item recovery
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"AdventureGuildRecovery",
+				"Owners",
+				"#0"
+			],
+			"Entries": {
+				"Portrait": "Abigail",
+				"Id": "Abigail",
+        		"Name": "Abigail",
+				"Dialogues": [
+					{
+						"Id": "Si.AAShopString2",
+						"Dialogue": "What did you lose?"
+					}
+				]
+				
+			},
+			"When":
+        		{
+           			"GuildSched": "true",
+					"Day |contains= 2": true
+        		}
+		},
+
+		{
+			"Target": "Strings/StringsFromCSFiles",
+			"Action": "EditData",
+			"Entries": {
+				"ItemRecovery_Engaged": "I'll find your {0} tonight, and drop it off in your mailbox by tomorrow morning.",
+  				"ItemRecovery_Engaged_Stack": "Don't worry, I'll get your lost {0} back to you by tomorrow morning!",
+			},
+			"When":
+        		{
+           			"GuildSched": "true",
+					"Day |contains= 2": true
+        		}
+		},
+
+		// Summer main shop
+		// {
+		// 	"Action": "EditData",
+		// 	"Target": "Data/Shops",
+		// 	"TargetField": [
+		// 		"AdventureShop",
+		// 		"Owners",
+		// 		"#0"
+		// 	],
+		// 	"Entries": {
+		// 		"Portrait": "Abigail",
+		//		"Id": "Abigail",
+        //		"Name": "Abigail",
+		// 		"Dialogues": [
+		// 			{
+		// 				"Id": "Si.AAShopString3",
+		// 				"Dialogue": "I'm covering the desk this week while Marlon is away."
+		// 			}
+		// 		]
+				
+		// 	},
+		// 	"When":
+        // 		{
+        //    			"GuildWeek": "true",
+		// 			"Season |contains= Summer": true,
+		// 			"Day |contains= 4, 5, 6, 7, 8, 9, 10": true
+        // 		}
+		// },
+
+		// Summer item recovery
+		// {
+		// 	"Action": "EditData",
+		// 	"Target": "Data/Shops",
+		// 	"TargetField": [
+		// 		"AdventureGuildRecovery",
+		// 		"Owners",
+		// 		"#0"
+		// 	],
+		// 	"Entries": {
+		// 		"Portrait": "Abigail",
+		//		"Id": "Abigail",
+        //		"Name": "Abigail",
+		// 		"Dialogues": [
+		// 			{
+		// 				"Id": "Si.AAShopString4",
+		// 				"Dialogue": "What did you lose?"
+		// 			}
+		// 		]
+				
+		// 	},
+		// 	"When":
+        // 		{
+        //    		"GuildWeek": "true",
+		// 			"Season |contains= Summer": true,
+		// 			"Day |contains= 4, 5, 6, 7, 8, 9, 10": true
+        // 		}
+		// },
+
+		// {
+		// 	"Target": "Strings/StringsFromCSFiles",
+		// 	"Action": "EditData",
+		// 	"Entries": {
+		// 		"ItemRecovery_Engaged": "Got it, I'll find your {0} tonight and drop it off at your place by tomorrow.",
+  		// 		"ItemRecovery_Engaged_Stack": "Don't worry, I'll get your lost {0} back to you by tomorrow morning!",
+		// 	},
+		// 	"When":
+        // 		{
+        //    		"GuildWeek": "true",
+		// 			"Season |contains= Summer": true,
+		// 			"Day |contains= 4, 5, 6, 7, 8, 9, 10": true
+        // 		}
+		// },
+		
+
+	]
+
+}

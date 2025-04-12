@@ -2,19 +2,6 @@
 
 	"Format": "2.0.0",
 
-	// Changes so far:
-	// Added config
-	// Added dialogue
-	// Updated file and log names
-	// Modified version of 14h event after arc 2 done; need testing
-	// Arc 2 events: 8/8 + 1 mail; need testing
-	// GuildSched (2nd) and GuildWeek (Summer 4-10) stuff done; need testing
-	// Marlon guild sched compats; need testing
-
-	// Still to do:
-	// Test events, config, guild stuff
-	// More CTs
-	// SVE arc2 compat
 
 	// Config //////////////////////////////////////////////////////////
 
@@ -47,14 +34,14 @@
 		"GuildSched": {
 			"AllowValues": "true, false",
 			"Default": "true",
-			"Description": "When disabled, Abigail won't occasionally help manage the Guild Shop."
+			"Description": "When disabled, Abigail won't help manage the Guild Shop once a month."
 		},
 
-		"GuildWeek": {
-			"AllowValues": "true, false",
-			"Default": "true",
-			"Description": "When disabled, Abigail won't cover the Guild Shop for a week each Summer."
-		},
+		// "GuildWeek": {
+		// 	"AllowValues": "true, false",
+		// 	"Default": "true",
+		// 	"Description": "When disabled, Abigail won't cover the Guild Shop for a week each Summer."
+		// },
 
 		"EditEvents": {
 			"AllowValues": "true, false",
@@ -68,16 +55,16 @@
 			"Description": "When disabled, dialogue added by this mod won't be applied. Does not include conversation topics."
 		},
 
-		// "CrossoverContent": {
-		// 	"AllowValues": "true, false",
-		// 	"Default": "true",
-		// 	"Description": "When disabled, crossover content will not occur. Does not include compatibility patches."
-		// },
+		"CrossoverContent": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "When disabled, crossover content will not occur. Does not include compatibility patches."
+		},
 
 		"ShortVersion": {
 			"AllowValues": "true, false",
 			"Default": "false",
-			"Description": "When enabled, events after the first arc won't play. This is a quicker version of this mod where Abigail will continue following her Adventurer schedules and dialogue (unless disabled by other config settings), but won't continue her story after Event 13 unless re-enabled. Just in case you're feeling overwhelmed with all the Abigail events, or want to take a break from her journey for a while."
+			"Description": "When enabled, events after the first arc won't play unless disabled again. This is a quicker version of this mod where Abigail will continue following her Adventurer schedules and dialogue (unless disabled by other config settings), but won't continue her story after Event 13 unless re-enabled. Just in case you're feeling overwhelmed with all the Abigail events, or want to take a break from her journey for a while."
 		}
 
 	},
@@ -105,6 +92,15 @@
 		},
 
 		// Crossovers //////////////////////////////////////////////////////////
+
+		{
+			"Action": "Include",
+			"FromFile": "Assets/Crossovers/Si_AA_Crossovers.json",
+			"When": {
+				"HasWalletItem |contains=DwarvishTranslationGuide": true,
+				"CrossoverContent": true
+			}
+		},
 
 		// Load Events //////////////////////////////////////////////////////////
 

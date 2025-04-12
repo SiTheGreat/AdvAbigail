@@ -35,27 +35,26 @@
 		},
 	},
 
-	// Guild Schedule
+	// Guild
 	{
-		"LogName": "Si AA Guild Schedule",
+		"LogName": "Si AA SVE Compat Guild",
 		"Action": "Include",
-		"FromFile": "Assets/Compats/SVE/Si_AdvAbigail_SVEGuildSched.json",
+		"FromFile": "Assets/Compats/SVE/Si_AdvAbigail_SVECompatGuild.json",
 		"When": {
 			"HasSeenEvent:hostPlayer |contains=262213018": true,
 			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
-			"HasMod: |contains=Wolf.Marlon": false,
-			"HasMod: |contains=Yoshimax.BefriendMarlon": false
-		}
+		},
 	},
 
 	// Make Marlon Real and Befriend Marlon And Gunther //////////////////////////////////////////////////////////
+	
 	// These two mods make really similar Marlon patches so I can use the same compat files for both of them
 
 	// Guild Schedule
 	{
-		"LogName": "Si AA Guild Schedule",
+		"LogName": "Si AA Marlon Mods Guild",
 		"Action": "Include",
-		"FromFile": "Assets/Compats/SVE/Si_AdvAbigail_MarlonModGuildSched.json",
+		"FromFile": "Assets/Compats/MarlonMods/Si_AdvAbigail_MarlonSched.json",
 		"When": {
 			"HasSeenEvent:hostPlayer |contains=262213018": true,
 			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
