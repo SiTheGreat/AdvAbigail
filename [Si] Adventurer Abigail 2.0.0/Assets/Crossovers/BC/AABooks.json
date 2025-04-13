@@ -18,8 +18,8 @@
 		"Entries": {
 			"Si.BC_AAMinesBookNote": {
 				"Name": "Si.BC_AAMinesBookNote",
-				"DisplayName": "{{i18n:Si.BC.AAMinesBookName}}",
-				"Description": "{{i18n:Si.BC.AAMinesBookDesc}}",
+				"DisplayName": "Surviving the Mines",
+				"Description": "This looks like one of the books Marlon lent Abigail for her adventurer studies.",
 				"Type": "asdf",
 				"Category": 0,
 				"Price": 303,
@@ -63,8 +63,8 @@
 		"Entries": {
 			"Si.BC_AAMinesBook": {
 				"Name": "Si.BC_AAMinesBook",
-				"DisplayName": "{{i18n:Si.BC.AAMinesBookName}}",
-				"Description": "{{i18n:Si.BC.AAMinesBookDesc}}",
+				"DisplayName": "Surviving the Mines",
+				"Description": "This looks like one of the books Marlon lent Abigail for her adventurer studies.",
 				"Type": "asdf",
 				"Category": 0,
 				"Price": 303,
@@ -106,8 +106,8 @@
 		"Entries": {
 			"Si.BC_AASwordBookNote": {
 				"Name": "Si.BC_AASwordBookNote",
-				"DisplayName": "{{i18n:Si.BC.AASwordBookName}}",
-				"Description": "{{i18n:Si.BC.AASwordBookDesc}}",
+				"DisplayName": "Sword Care and Maintenance",
+				"Description": "This looks like one of the books Marlon lent Abigail for her adventurer studies.",
 				"Type": "asdf",
 				"Category": 0,
 				"Price": 303,
@@ -151,8 +151,8 @@
 		"Entries": {
 			"Si.BC_AASwordBook": {
 				"Name": "Si.BC_AASwordBook",
-				"DisplayName": "{{i18n:Si.BC.AASwordBookName}}",
-				"Description": "{{i18n:Si.BC.AASwordBookDesc}}",
+				"DisplayName": "Sword Care and Maintenance",
+				"Description": "This looks like one of the books Marlon lent Abigail for her adventurer studies.",
 				"Type": "asdf",
 				"Category": 0,
 				"Price": 303,
@@ -302,8 +302,8 @@
 			// AAMinesBook
 
 			"Si.BC_AAMinesBookSNF": {
-				"Title": "{{i18n:Si.BC.AAMinesBookName}}",
-				"Contents": "{{i18n:Si.BC.AAMinesBookContent}}",
+				"Title": "Surviving the Mines",
+				"Contents": "^^The most common creature you'll encounter in the mines are slimes. Oozing with a pungent, sticky substance, these beings can congregate together to form larger entities known for absorbing entire adventurers whole.",
 				"ObjectId": "(O)Si.BC_AAMinesBookNote",
 				"Location": "null",
 				"NoteTexture": "Mods/Si.BC/blankbook",
@@ -319,8 +319,8 @@
 			// AASwordBook
 
 			"Si.BC_AASwordBookSNF": {
-				"Title": "{{i18n:Si.BC.AASwordBookName}}",
-				"Contents": "{{i18n:Si.BC.AASwordBookContent}}",
+				"Title": "Sword Care and Maintenance",
+				"Contents": "^^To clean the blade, apply a few drops of your selected oil solution to a cloth and gently swipe it along the metal so that you are left with a thin sheen of oil. The sword should not be dripping or excessively damp.",
 				"ObjectId": "(O)Si.BC_AASwordBookNote",
 				"Location": "null",
 				"NoteTexture": "Mods/Si.BC/blankbook",
