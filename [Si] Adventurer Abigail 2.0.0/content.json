@@ -68,6 +68,30 @@
 		}
 
 	},
+
+	// Dynamic Tokens
+
+	"DynamicTokens": [
+
+		// Housing options
+
+		{
+			"Name": "RasTitle",
+			"Value": "Wizard Rasmodius",
+			"When": {
+				"HasMod |contains=Nom0ri.RomRas": "false",
+			},
+		},
+
+		{
+			"Name": "RasTitle",
+			"Value": "Witch Rasmodia",
+			"When": {
+				"HasMod |contains=Nom0ri.RomRas": "true",
+			},
+		},
+
+	],
 	
 	"Changes": [
 
