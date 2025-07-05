@@ -46,9 +46,9 @@
 		},
 	},
 
-	// Make Marlon Real and Befriend Marlon And Gunther //////////////////////////////////////////////////////////
+	// Make Marlon Real and Befriend Marlon And Gunther and ValleyNPCs and ValleyNPCs (Marlon Only) //////////////////////////////////////////////////////////
 	
-	// These two mods make really similar Marlon patches so I can use the same compat files for both of them
+	// These four mods make really similar Marlon patches so I can use the same compat files for both of them
 
 	// Guild Schedule
 	{
@@ -58,7 +58,7 @@
 		"When": {
 			"HasSeenEvent:hostPlayer |contains=262213018": true,
 			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
-			"HasMod: |contains=Wolf.Marlon, Yoshimax.BefriendMarlon": true,
+			"HasMod: |contains=Wolf.Marlon, Yoshimax.BefriendMarlon, Endwyr.ValleyNPCs, Endwyr.ValleyNPCsMarlon": true,
 		}
 	},
 
