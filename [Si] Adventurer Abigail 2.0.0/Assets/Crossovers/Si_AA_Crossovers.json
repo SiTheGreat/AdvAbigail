@@ -24,6 +24,17 @@
 		}
 	},
 
+	// Sebastian's Frog Sanctuary //////////////////////////////////////////////////////////
+
+	{
+		"LogName": "Si SF AA Crossover Event",
+		"Action": "Include",
+		"FromFile": "Assets/Crossovers/SFS/Si_SF_AA.json",
+		"When": {
+			"HasMod: |contains=Si.SebsFrogs": true,
+		},
+	},
+
 	// Book Collecting //////////////////////////////////////////////////////////
 	
 	// Books
