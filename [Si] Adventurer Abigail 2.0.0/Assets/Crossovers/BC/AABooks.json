@@ -180,18 +180,18 @@
 		},
 	},
 
-	// Robin Shop //////////////////////////////////////////////////////////
+	// Guild Shop //////////////////////////////////////////////////////////
 
 	{
         "Action": "EditData",
         "Target": "Data/Shops",
-        "TargetField": [ "Carpenter", "Items" ],
+        "TargetField": [ "AdventureShop", "Items" ],
         "Entries":{
             "Si_AA_AAMinesBookShop": {
 				"Id": "Si_AA_AAMinesBookShop",
 				"ItemId": "(O)Si.BC_AAMinesBookNote",
                 "AvailableStock" : "1",
-				"Condition": "RANDOM 0.4 @addDailyLuck, PLAYER_HAS_SEEN_EVENT Current 262213016, !PLAYER_HAS_MAIL Current Si.BC_ReceivedAAMinesBook",
+				"Condition": "RANDOM 0.3 @addDailyLuck, PLAYER_HAS_SEEN_EVENT Current 262213016, !PLAYER_HAS_MAIL Current Si.BC_ReceivedAAMinesBook",
 				"ActionsOnPurchase": [
 					"AddMail Current Si.BC_HasAAMinesBook"
 				],
@@ -200,127 +200,13 @@
 				"Id": "Si_AA_AASwordBookShop",
 				"ItemId": "(O)BC_AASwordBookNote",
                 "AvailableStock" : "1",
-				"Condition": "RANDOM 0.3 @addDailyLuck, PLAYER_HAS_SEEN_EVENT Current 262213016, !PLAYER_HAS_MAIL Current Si.BC_ReceivedAASwordBook",
+				"Condition": "RANDOM 0.4 @addDailyLuck, PLAYER_HAS_SEEN_EVENT Current 262213003, !PLAYER_HAS_MAIL Current Si.BC_ReceivedAASwordBook",
 				"ActionsOnPurchase": [
 					"AddMail Current Si.BC_HasAASwordBook"
 				],
 		    },
         },
 	},
-
-	// // AAMinesBook
-
-	// {
-	// 	"Action": "EditData",
-	// 	"Target": "Data/TriggerActions",
-	// 	"Entries": {
-	// 		"Si.BC_AAMinesBookTrigger": {
-	// 			"Id": "Si.BC_AAMinesBookTrigger",
-	// 			"MarkActionApplied": true,
-	// 			"Trigger": "Manual",
-	// 			"Condition": "!PLAYER_HAS_MAIL Current Si.BC_HasAAMinesBook",
-	// 			"Actions": [
-	// 				"AddItem Si.BC_AAMinesBookNote",
-	// 				"AddMail Current Si.BC_HasAAMinesBook",
-	// 			]
-	// 		}
-	// 	},
-	// },
-
-	// {
-	// 	"Action": "EditMap",
-	// 	"Target": "Maps/SeedShop",
-	// 	"When": {
-	// 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
-	// 		"HasSeenEvent: |contains=262213016": true
-	// 	},
-	// 	"Priority": "Late",
-	// 	"MapTiles": [
-	// 		{
-	// 			"Position": { "X": 4, "Y": 11 },
-	// 			"Layer": "Buildings",
-	// 			"SetProperties": {
-	// 				"Action": "spacechase0.SpaceCore_TriggerAction Si.BC_AAMinesBookTrigger"
-	// 			}
-	// 		},
-	// 	],
-	// },
-
-	// {
-	// 	"Action": "EditMap",
-	// 	"Target": "Maps/SeedShop",
-	// 	"When": {
-	// 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
-	// 		"HasSeenEvent: |contains=262213016": true
-	// 	},
-	// 	"Priority": "Late",
-	// 	"MapTiles": [
-	// 		{
-	// 			"Position": { "X": 4, "Y": 11 },
-	// 			"Layer": "Buildings",
-	// 			"SetProperties": {
-	// 				"Action": "spacechase0.SpaceCore_TriggerAction Si.BC_AAMinesBookTrigger"
-	// 			}
-	// 		},
-	// 	],
-	// },
-
-	// // AASwordBook
-
-	// {
-	// 	"Action": "EditData",
-	// 	"Target": "Data/TriggerActions",
-	// 	"Entries": {
-	// 		"Si.BC_AASwordBookTrigger": {
-	// 			"Id": "Si.BC_AASwordBookTrigger",
-	// 			"MarkActionApplied": true,
-	// 			"Trigger": "Manual",
-	// 			"Condition": "!PLAYER_HAS_MAIL Current Si.BC_HasAASwordBook",
-	// 			"Actions": [
-	// 				"AddItem Si.BC_AASwordBookNote",
-	// 				"AddMail Current Si.BC_HasAASwordBook",
-	// 			]
-	// 		}
-	// 	},
-	// },
-
-	// {
-	// 	"Action": "EditMap",
-	// 	"Target": "Maps/SeedShop",
-	// 	"When": {
-	// 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
-	// 		"HasSeenEvent: |contains=262213016": true
-	// 	},
-	// 	"Priority": "Late",
-	// 	"MapTiles": [
-	// 		{
-	// 			"Position": { "X": 5, "Y": 11 },
-	// 			"Layer": "Buildings",
-	// 			"SetProperties": {
-	// 				"Action": "spacechase0.SpaceCore_TriggerAction Si.BC_AASwordBookTrigger"
-	// 			}
-	// 		},
-	// 	],
-	// },
-
-	// {
-	// 	"Action": "EditMap",
-	// 	"Target": "Maps/SeedShop",
-	// 	"When": {
-	// 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
-	// 		"HasSeenEvent: |contains=262213016": true
-	// 	},
-	// 	"Priority": "Late",
-	// 	"MapTiles": [
-	// 		{
-	// 			"Position": { "X": 5, "Y": 11 },
-	// 			"Layer": "Buildings",
-	// 			"SetProperties": {
-	// 				"Action": "spacechase0.SpaceCore_TriggerAction Si.BC_AASwordBookTrigger"
-	// 			}
-	// 		},
-	// 	],
-	// },
 
 	// Secret Notes //////////////////////////////////////////////////////////
 
